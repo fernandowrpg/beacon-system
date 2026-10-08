@@ -141,6 +141,10 @@ export function defaultAccuracy(actor, item) {
   if (/\bAccurate\b/i.test(tags) && !/\bInaccurate\b/i.test(tags)) accuracy += 1;
   if (/\bInaccurate\b/i.test(tags)) difficulty += 1;
   if (item?.system.attack === "ranged" && actor?.statuses?.has("engaged")) difficulty += 1;
+  if (actor?.type === "npc") {
+    const extra = tiered(item?.system.attackBonus, actor.system.tier).match(/,\s*([+-])\s*(\d+)/);
+    if (extra) extra[1] === "+" ? (accuracy += Number(extra[2])) : (difficulty += Number(extra[2]));
+  }
   return { accuracy, difficulty };
 }
 

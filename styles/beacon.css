@@ -20,6 +20,7 @@
 }
 
 .theme-dark .beacon.sheet,
+.theme-dark .beacon-creator,
 .theme-dark .beacon-card,
 body.theme-dark .beacon.sheet {
   --beacon-bg: #1b1f2a;
@@ -290,3 +291,35 @@ body.theme-dark .beacon.sheet {
 .beacon-current-phase { text-align: center; font-weight: bold; padding: 2px; color: #e2b552; }
 .beacon-phase { color: #e2b552; }
 .beacon-import-btn { flex: 1 1 100%; }
+
+/* Creator */
+.beacon-creator .window-content { display: flex; flex-direction: column; gap: 8px; padding: 10px; background: var(--beacon-bg); color: var(--beacon-ink); overflow: hidden; }
+.beacon-creator .creator-tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--beacon-accent); }
+.beacon-creator .creator-tabs a { padding: 4px 12px; border-radius: 6px 6px 0 0; color: var(--beacon-muted); }
+.beacon-creator .creator-tabs a.active { background: var(--beacon-accent); color: #fff; }
+.beacon-creator .creator-body { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; min-height: 0; }
+.beacon-creator .creator-body[hidden], .beacon-creator .creator-buttons[hidden] { display: none; }
+.beacon-creator .creator-types { display: flex; flex-wrap: wrap; gap: 4px; }
+.beacon-creator .creator-types button { width: auto; flex: 0 0 auto; line-height: 22px; padding: 0 10px; border-radius: 999px; font-size: 0.85em; }
+.beacon-creator .creator-types button.active { background: var(--beacon-accent); color: #fff; border-color: var(--beacon-accent); }
+.beacon-creator .creator-fields { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 10px; align-items: end; }
+.beacon-creator h3 { grid-column: 1 / -1; margin: 6px 0 0; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; color: var(--beacon-muted); border-bottom: 1px solid var(--beacon-line); }
+.beacon-creator label.f { display: flex; flex-direction: column; gap: 2px; font-size: 0.8em; color: var(--beacon-muted); min-width: 0; }
+.beacon-creator label.f.half { grid-column: span 2; }
+.beacon-creator label.f.wide, .beacon-creator .creator-tiers, .beacon-creator .creator-features { grid-column: 1 / -1; }
+.beacon-creator label.check { display: flex; align-items: center; gap: 4px; font-size: 0.85em; }
+.beacon-creator input, .beacon-creator select, .beacon-creator textarea { width: 100%; }
+.beacon-creator textarea { min-height: 70px; resize: vertical; }
+.beacon-creator .creator-json { flex: 1; font-family: monospace; font-size: 0.85em; }
+.beacon-creator .creator-tiers { overflow-x: auto; }
+.beacon-creator .creator-tiers table { margin: 0; }
+.beacon-creator .creator-tiers input { text-align: center; }
+.beacon-creator .creator-features { display: flex; flex-direction: column; gap: 6px; }
+.beacon-creator .creator-feature { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 4px 8px; padding: 6px; border: 1px solid var(--beacon-line); border-left: 3px solid var(--beacon-accent-2); border-radius: 5px; background: var(--beacon-panel); }
+.beacon-creator .creator-feature .row-head { grid-column: 1 / -1; display: flex; justify-content: space-between; font-weight: bold; color: var(--beacon-accent-2); }
+.beacon-creator .creator-footer { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; border-top: 1px solid var(--beacon-line); padding-top: 8px; }
+.beacon-creator .creator-footer label.folder { width: 180px; }
+.beacon-creator .creator-buttons { display: flex; gap: 4px; flex: 1; }
+.beacon-creator .creator-buttons button { line-height: 26px; }
+.beacon-creator .creator-created { list-style: none; margin: 0; padding: 0; width: 100%; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.85em; }
+.beacon-creator .hint { color: var(--beacon-muted); font-size: 0.85em; margin: 0; }

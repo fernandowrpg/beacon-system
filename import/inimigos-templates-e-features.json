@@ -1,0 +1,6383 @@
+[
+ {
+  "name": "Amorphous",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Armor",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "Armor",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Backup Melee",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Reach 1",
+   "attackBonus": "+2/4/6",
+   "damage": "4/5/6",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Darkvision",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Deadly Attacks",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Double Crossbow",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "bow",
+   "tags": "",
+   "range": "Range 8 / Reach 3",
+   "attackBonus": "+1/2/3",
+   "damage": "4",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Enhanced",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Flight",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Full Attacker",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Guardian",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Heavy Blaster",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "heavy",
+   "weaponType": "none",
+   "tags": "Arcing, Reloading",
+   "range": "Range 8, Blast 2",
+   "attackBonus": "",
+   "damage": "5/7/9",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Immunity",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Incorporeal",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Juggernaut",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Long Weapon",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "Reliable 2/3/4",
+   "range": "Range 10",
+   "attackBonus": "+1/2/3",
+   "damage": "5/6/7",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Mana Hunter",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 304.</em></p>"
+  }
+ },
+ {
+  "name": "Mana Rich",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Opportune Weapon",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Reach 2",
+   "attackBonus": "+1/2/3, +2",
+   "damage": "4",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Phalanx",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Recurring",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Regenerator",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Resistance",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Seeker Blast",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "adef",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Aetheric, Homing",
+   "range": "Range = Scope, Blast 1",
+   "attackBonus": "+1/2/3",
+   "damage": "4/5/6",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Tough",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Trample",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 305.</em></p>"
+  }
+ },
+ {
+  "name": "Minion",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "mechanical",
+   "description": "<p><em>Beacon Core, p. 306.</em></p><p>Incompatible, One Hit, Fanatical</p>"
+  }
+ },
+ {
+  "name": "Incompatible",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 306.</em></p>"
+  }
+ },
+ {
+  "name": "One Hit",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 306.</em></p>"
+  }
+ },
+ {
+  "name": "Fanatical",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "reaction",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 306.</em></p>"
+  }
+ },
+ {
+  "name": "Veteran",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "mechanical",
+   "description": "<p><em>Beacon Core, p. 306.</em></p><p>Enhanced, Sturdy, Veteran Traits, Caster, Dangerous, Deadly Crit, First Initiative, Fighter, Fortified Armor, Full Attacker, Keen Eye, Last Stand, Legendary Resistance, Resurgence</p>"
+  }
+ },
+ {
+  "name": "Enhanced",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 306.</em></p>"
+  }
+ },
+ {
+  "name": "Sturdy",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 306.</em></p>"
+  }
+ },
+ {
+  "name": "Veteran Traits",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 306.</em></p>"
+  }
+ },
+ {
+  "name": "Caster",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Dangerous",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Deadly Crit",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "First Initiative",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Fighter",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Fortified Armor",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "heavy",
+   "weaponType": "none",
+   "tags": "Armor",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Full Attacker",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Keen Eye",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Last Stand",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Legendary Resistance",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Resurgence",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "free",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "limited",
+   "uses": {
+    "value": 1,
+    "max": 1
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Elite",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "mechanical",
+   "description": "<p><em>Beacon Core, p. 307.</em></p><p>Extra Actions, Enhanced, Incompatible, Sturdy, Elite Traits</p>"
+  }
+ },
+ {
+  "name": "Extra Actions",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Enhanced",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Incompatible",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Sturdy",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Elite Traits",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 307.</em></p>"
+  }
+ },
+ {
+  "name": "Mini-Boss",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "mechanical",
+   "description": "<p><em>Beacon Core, p. 308.</em></p><p>Extra Actions, Perseverance, Hardened, Incompatible, Legendary Resistance, Reflexes, Tough, Mini-Boss Traits, Armory, Dangerous, Deadly Crit, Expert Caster, Expert Fighter, Fanatical Allies, Focused Concentration, Full Attacker, Invulnerability, Keen Eye, Last Stand, Masterwork Armor, Masterwork Melee Weapon, Masterwork Ranged Weapon, Meteor Swarm, Resurgence, Seize Initiative, Unfazed</p>"
+  }
+ },
+ {
+  "name": "Extra Actions",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Perseverance",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Hardened",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Incompatible",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Legendary Resistance",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Reflexes",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Tough",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Mini-Boss Traits",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Armory",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "+2/4/6",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Dangerous",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Deadly Crit",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Expert Caster",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Expert Fighter",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Fanatical Allies",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 308.</em></p>"
+  }
+ },
+ {
+  "name": "Focused Concentration",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Full Attacker",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Invulnerability",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "defend",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Keen Eye",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Last Stand",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Masterwork Armor",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "Armor",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Masterwork Melee Weapon",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "Reliable 6/8/10",
+   "range": "Reach 2",
+   "attackBonus": "+2/3/4, +1",
+   "damage": "6/8/10",
+   "damageType": "force",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Masterwork Ranged Weapon",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "Reliable 4/6/8",
+   "range": "Range 20",
+   "attackBonus": "+2/4/6, +1",
+   "damage": "4/6/8",
+   "damageType": "force",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Meteor Swarm",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "channel",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Arcing",
+   "range": "Range = Scope, Blast 2",
+   "attackBonus": "",
+   "damage": "14/17/20",
+   "damageType": "astral",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Resurgence",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "free",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "limited",
+   "uses": {
+    "value": 1,
+    "max": 1
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Seize Initiative",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Unfazed",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 309.</em></p>"
+  }
+ },
+ {
+  "name": "Beast",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 310.</em></p><p>Bestial Nature, Beast Traits, Acid Spit, Burrow, Charge Attack, Constrict, Echolocation, Fly, Swim, Petrify, Predator's Claws, Scent, Slam, Spikes, Sting, Web</p>"
+  }
+ },
+ {
+  "name": "Bestial Nature",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Beast Traits",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Acid Spit",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "club",
+   "tags": "",
+   "range": "Range 8",
+   "attackBonus": "+1/3/5",
+   "damage": "2/3/4",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Burrow",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Charge Attack",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Constrict",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Piercing",
+   "range": "",
+   "attackBonus": "",
+   "damage": "3/4/5",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Echolocation",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Fly",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Swim",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Petrify",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "skirmish",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 2",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "1/2/3",
+   "damageType": "stress",
+   "mana": 2,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Predator's Claws",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "club",
+   "tags": "Stressful 1",
+   "range": "Reach 1",
+   "attackBonus": "+2/4/6",
+   "damage": "4/6/8",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Scent",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Slam",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "heavy",
+   "weaponType": "club",
+   "tags": "",
+   "range": "Reach 1",
+   "attackBonus": "+1/3/5, +1",
+   "damage": "6/8/10",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Spikes",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "Piercing",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 310.</em></p>"
+  }
+ },
+ {
+  "name": "Sting",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "longarm",
+   "tags": "",
+   "range": "Reach 2",
+   "attackBonus": "+2/4/6",
+   "damage": "2/3/4",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Web",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range 5",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Celestial",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 311.</em></p><p>Banish, Celestial Nature, Divine Light, Divine Shield, Flight, Healing Aura, Unblemished</p>"
+  }
+ },
+ {
+  "name": "Banish",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "channel",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Celestial Nature",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Divine Light",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Arcing",
+   "range": "Range = Scope, Blast 1",
+   "attackBonus": "+1/2/3",
+   "damage": "4/6/8",
+   "damageType": "astral",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Divine Shield",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Flight",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Healing Aura",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Arcing",
+   "range": "Aura 5",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Unblemished",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 311.</em></p>"
+  }
+ },
+ {
+  "name": "Construct",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 312.</em></p><p>Artificial, Magic-Dependent, Integrated Weapons, Magic Resistance, Poison Breath, Reinforced Plating, Scanners, Shielded</p>"
+  }
+ },
+ {
+  "name": "Artificial",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Magic-Dependent",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Integrated Weapons",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Magic Resistance",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Poison Breath",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "brawl",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Close Blast 2",
+   "attackBonus": "",
+   "damage": "3/4/5",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Reinforced Plating",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Scanners",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Shielded",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Demon",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 312.</em></p><p>Chaotic Resistance, Blood Hunt, Death Burst, Fear Aura, Flaming Whip, Frenzy, Improved Chaos, Painful Aura, Spikes</p>"
+  }
+ },
+ {
+  "name": "Chaotic Resistance",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Blood Hunt",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Death Burst",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Burst 1",
+   "attackBonus": "",
+   "damage": "3/4/5",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Fear Aura",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Aura 2",
+   "attackBonus": "",
+   "damage": "2",
+   "damageType": "stress",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Flaming Whip",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "heavy",
+   "weaponType": "longarm",
+   "tags": "Pull 2",
+   "range": "Reach 3",
+   "attackBonus": "+1/3/5, +1",
+   "damage": "5/6/7",
+   "damageType": "astral",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Frenzy",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Improved Chaos",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Painful Aura",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Aura 2",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Spikes",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "Piercing",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 312.</em></p>"
+  }
+ },
+ {
+  "name": "Devil",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 313.</em></p><p>Fiendish Resistance, Bad Deal, Charm, Contract, Drain, Hellfire, Invisibility</p>"
+  }
+ },
+ {
+  "name": "Fiendish Resistance",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 313.</em></p>"
+  }
+ },
+ {
+  "name": "Bad Deal",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "reaction",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 313.</em></p>"
+  }
+ },
+ {
+  "name": "Charm",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "stress",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 313.</em></p>"
+  }
+ },
+ {
+  "name": "Contract",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 313.</em></p>"
+  }
+ },
+ {
+  "name": "Drain",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "adef",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Reach 1",
+   "attackBonus": "+2/4/6",
+   "damage": "2/3/4",
+   "damageType": "stress",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 313.</em></p>"
+  }
+ },
+ {
+  "name": "Hellfire",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "adef",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Range = Scope",
+   "attackBonus": "+1/2/3, +1",
+   "damage": "2/3/4",
+   "damageType": "discord",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 313.</em></p>"
+  }
+ },
+ {
+  "name": "Invisibility",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 313.</em></p>"
+  }
+ },
+ {
+  "name": "Dire",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 314.</em></p><p>Dire Size, Frenzy, Armor Spikes, Ferocious Bite, Backed into a Corner, Rip, Tear, Tough</p>"
+  }
+ },
+ {
+  "name": "Dire Size",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Frenzy",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Armor Spikes",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Ferocious Bite",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "heavy",
+   "weaponType": "club",
+   "tags": "",
+   "range": "Reach 1",
+   "attackBonus": "+1/3/5, +1",
+   "damage": "6/8/10",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Backed into a Corner",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "reaction",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Rip",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Tear",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Tough",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Draconic",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 314.</em></p><p>Chromatic Scales, Natural Weapons, Breath Weapon, Change Size, Swallow, Draconic Bloodline, Energy Aura, Flight</p>"
+  }
+ },
+ {
+  "name": "Chromatic Scales",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Natural Weapons",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "heavy",
+   "weaponType": "club",
+   "tags": "",
+   "range": "Reach 1",
+   "attackBonus": "+2/4/6",
+   "damage": "5/7/9",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Breath Weapon",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "brawl",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Line 10 or Close Blast 2",
+   "attackBonus": "",
+   "damage": "8/10/12",
+   "damageType": "astral",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Change Size",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Swallow",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "brawl",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "+2/4/6",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Draconic Bloodline",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana X",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 314.</em></p>"
+  }
+ },
+ {
+  "name": "Energy Aura",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Aura 1",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "astral",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Flight",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Elemental",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 315.</em></p><p>Elemental Nature, Death Burst, Elemental Burn, Elemental Nimbus, Energy Absorption, Energy Form, Environmental Merge</p>"
+  }
+ },
+ {
+  "name": "Elemental Nature",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Death Burst",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Burst 2",
+   "attackBonus": "",
+   "damage": "4/5/6",
+   "damageType": "astral",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Elemental Burn",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Elemental Nimbus",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Aura 2",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Energy Absorption",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Energy Form",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "astral",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Environmental Merge",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 315.</em></p>"
+  }
+ },
+ {
+  "name": "Fey",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 316.</em></p><p>Cold Iron, Confuse, Death Curse, Invisibility, Fey Walk, Fly, Polymorph, Sleep Dust</p>"
+  }
+ },
+ {
+  "name": "Cold Iron",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Confuse",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "adef",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range = Scope",
+   "attackBonus": "+1/3/5",
+   "damage": "1/2/3",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Death Curse",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range 10",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Invisibility",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Fey Walk",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Fly",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Polymorph",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1, Polymorph",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "stress",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Sleep Dust",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range 5",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 316.</em></p>"
+  }
+ },
+ {
+  "name": "Mounted",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 317.</em></p><p>Hard Fall, Mounted Speed, Gallop, Impact Lance, Run Over, Mount's Weapon</p>"
+  }
+ },
+ {
+  "name": "Hard Fall",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 317.</em></p>"
+  }
+ },
+ {
+  "name": "Mounted Speed",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 317.</em></p>"
+  }
+ },
+ {
+  "name": "Gallop",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 317.</em></p>"
+  }
+ },
+ {
+  "name": "Impact Lance",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "longarm",
+   "tags": "Push 2",
+   "range": "Reach 2",
+   "attackBonus": "+1/2/3",
+   "damage": "5/6/7",
+   "damageType": "force",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 317.</em></p>"
+  }
+ },
+ {
+  "name": "Run Over",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "reposition",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "3/4/5",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 317.</em></p>"
+  }
+ },
+ {
+  "name": "Mount's Weapon",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "club",
+   "tags": "",
+   "range": "Reach 1",
+   "attackBonus": "+1/2/3",
+   "damage": "3/4/5",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 317.</em></p>"
+  }
+ },
+ {
+  "name": "Ooze",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 318.</em></p><p>Amorphous, Ooze Body, Acid Body, Corrosive Lob, Engulf, Split, Split, Mini-Boss, Sticky Climbing, Transparent</p>"
+  }
+ },
+ {
+  "name": "Amorphous",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Ooze Body",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Acid Body",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Piercing",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2",
+   "damageType": "lunar",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Corrosive Lob",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "light",
+   "weaponType": "club",
+   "tags": "Arcing",
+   "range": "Range 8 / Reach 1",
+   "attackBonus": "+1/3/5, +1",
+   "damage": "1/2/3",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Engulf",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Piercing",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "lunar",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Split",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Split, Mini-Boss",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Sticky Climbing",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Transparent",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 318.</em></p>"
+  }
+ },
+ {
+  "name": "Outlaw",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 319.</em></p><p>Gang Up, Poor Training, Ambush, Chain Weaponry, Cruel, Dirty Fighter, Fearsome Leader, Flintlock, Low Blow, Rusty Weaponry, Steal, Thief</p>"
+  }
+ },
+ {
+  "name": "Gang Up",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Poor Training",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Ambush",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Chain Weaponry",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Cruel",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Dirty Fighter",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Fearsome Leader",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range 5",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Flintlock",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "magitech",
+   "tags": "Piercing, Reloading",
+   "range": "Range 5 / Reach 3",
+   "attackBonus": "+2/4/6, +1",
+   "damage": "6/7/8",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Low Blow",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Stressful 1",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Rusty Weaponry",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+   "category": "support",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Steal",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Thief",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 319.</em></p>"
+  }
+ },
+ {
+  "name": "Plant",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 320.</em></p><p>Plant Nature, Foliage, Hallucinogenic Spores, In the Weeds, Living Trees, Pacifying Spores, Poison Spores, Rooted</p>"
+  }
+ },
+ {
+  "name": "Plant Nature",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "Foliage",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "Hallucinogenic Spores",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "fight",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Burst 2",
+   "attackBonus": "",
+   "damage": "2",
+   "damageType": "stress",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "In the Weeds",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "Living Trees",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana X, Summon",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "Pacifying Spores",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "fight",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Burst 2",
+   "attackBonus": "",
+   "damage": "2",
+   "damageType": "stress",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "Poison Spores",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "fight",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1",
+   "range": "Burst 2",
+   "attackBonus": "",
+   "damage": "3/4/5",
+   "damageType": "discord",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 5,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "Rooted",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 320.</em></p>"
+  }
+ },
+ {
+  "name": "Undead",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 321.</em></p><p>Undead Nature, Call of the Grave, Curse of Death, Death Grip, Festering Bite, Life Sense, Infect, Respawn, Minion, Respawn Point, Undead Construction, Stench, Undead Marshal</p>"
+  }
+ },
+ {
+  "name": "Undead Nature",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Call of the Grave",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Curse of Death",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "adef",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Aetheric, Indirect",
+   "range": "Range = Scope",
+   "attackBonus": "+2/4/6",
+   "damage": "4/6/8",
+   "damageType": "lunar",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Death Grip",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Festering Bite",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+   "category": "weapon",
+   "action": "fight",
+   "attack": "melee",
+   "defense": "dodge",
+   "size": "main",
+   "weaponType": "club",
+   "tags": "Reloading",
+   "range": "Reach 1",
+   "attackBonus": "+1/3/5, +1",
+   "damage": "5/6/7",
+   "damageType": "lunar",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Life Sense",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Infect",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 4,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Respawn, Minion",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Respawn Point",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Undead Construction",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 321.</em></p>"
+  }
+ },
+ {
+  "name": "Stench",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Aura 1",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Undead Marshal",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range 5",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Vampiric",
+  "type": "template",
+  "img": "icons/svg/book.svg",
+  "system": {
+   "kind": "thematic",
+   "description": "<p><em>Beacon Core, p. 322.</em></p><p>Bleed, Agents of the Night, Amplify, Blood Drain, Hypnotize, Misty Escape, Siphon, Undead Nature, Weeping Wound</p>"
+  }
+ },
+ {
+  "name": "Bleed",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "1",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": true,
+   "npcFeature": "base",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Agents of the Night",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "channel",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Mana 1, Summon",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 1,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Amplify",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "skirmish",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "force",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 6,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Blood Drain",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Hypnotize",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "channel",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "Range = Scope",
+   "attackBonus": "",
+   "damage": "2/3/4",
+   "damageType": "stress",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Misty Escape",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "reaction",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Siphon",
+  "type": "ability",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+   "category": "spell",
+   "action": "volley",
+   "attack": "ranged",
+   "defense": "adef",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "Aetheric",
+   "range": "Range = Scope",
+   "attackBonus": "+2/4/6",
+   "damage": "4/6/8",
+   "damageType": "force",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Undead Nature",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+   "category": "trait",
+   "action": "passive",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "",
+   "damageType": "physical",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ },
+ {
+  "name": "Weeping Wound",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+   "category": "skill",
+   "action": "minor",
+   "attack": "none",
+   "defense": "dodge",
+   "size": "none",
+   "weaponType": "none",
+   "tags": "",
+   "range": "",
+   "attackBonus": "",
+   "damage": "1",
+   "damageType": "discord",
+   "mana": 0,
+   "focus": 0,
+   "recharge": 0,
+   "usesType": "none",
+   "uses": {
+    "value": 0,
+    "max": 0
+   },
+   "equipped": false,
+   "npcFeature": "extra",
+   "source": "Beacon Core",
+   "description": "<p><em>Beacon Core, p. 322.</em></p>"
+  }
+ }
+]

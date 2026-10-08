@@ -49,9 +49,39 @@ Instalação manual: extraia o `beacon.zip` da [última release](https://github.
 
 **NPCs**: cada NPC guarda os valores dos 3 tiers e a ficha usa os do tier escolhido. Nas habilidades, campos no formato `T1/T2/T3` (`+2/4/6`, `4/6/8`) são resolvidos pelo tier.
 
+## Compêndios de inimigos
+
+O sistema traz três compêndios, visíveis só para o GM:
+
+- **BEACON — Inimigos**: os 28 tipos de NPC (pasta *Tipos de NPC*) e os blocos dos chefes Great Wyrm, Kraken e Lich, um ator por estágio e guardião (pasta *Chefes*). Cada NPC tem os valores dos 3 tiers e todas as features base e extras.
+- **BEACON — Templates de NPC**: os 4 templates mecânicos e os 15 temáticos, cada um numa pasta com suas features.
+- **BEACON — Features universais de NPC**: as features extras que qualquer NPC pode receber.
+
+Os compêndios trazem só **dados mecânicos**: atributos por tier, ação, categoria, tags, alcance, bônus de ataque e dano por tier, custo de MP, Recharge e usos. O texto dos efeitos não está incluído. Cada item e cada NPC aponta a página do *Beacon Core* onde o efeito está descrito. Rolagens, custos, alcance e aplicação de dano funcionam automaticamente.
+
+Limitações dos dados:
+- Quando uma habilidade tem mais de um dano (ex.: dano + Discord extra, ou opções diferentes), só o dano principal está no campo de dano. O resto está no livro.
+- Chefes: o HP base do bloco está registrado sem o bônus por PC, e o número de turnos (um por PC) fica a critério do GM.
+- Para usar um template, arraste as features dele para a ficha do NPC.
+
+Os mesmos dados estão em `import/inimigos.json` (atores) e `import/inimigos-templates-e-features.json` (itens), para importar direto no mundo pela aba Colar JSON do **Cadastro BEACON**.
+
+### Regerar os compêndios
+
+Os dados ficam em `data/npcs/*.json`. Depois de corrigir algo, rode (requer Python 3 e Node.js):
+
+```
+npm install
+npm run build
+```
+
+`build:data` gera `packs-src/` e `import/`, e `build:packs` compila `packs/` com o CLI oficial do Foundry.
+
 ## Conteúdo (importação JSON)
 
-O GM tem um botão **Importar BEACON** nas abas de Itens e Atores. Também pode usar a macro `game.beacon.openImporter()`. Cole um array JSON de documentos. Veja `examples/exemplo.json`.
+Para montar o JSON sem escrever à mão, abra `gerador/gerador.html` no navegador. Escolha o tipo, preencha os campos, adicione à lista e copie o resultado. A página cobre todos os tipos importáveis: habilidade, job, classe, talento, ancestralidade, suprimento, template de NPC, NPC (com tiers e features) e beacon.
+
+O GM tem um botão **Cadastro BEACON** nas abas de Itens e Atores (ou a macro `game.beacon.openCreator()`). A aba **Formulário** cria qualquer tipo de documento preenchendo campos: habilidade, job, classe, talento, ancestralidade, suprimento, template de NPC, NPC (com tiers e features) e beacon. Cada clique em **Criar** grava o documento na pasta escolhida e limpa o formulário para o próximo. A aba **Colar JSON** importa vários documentos de uma vez. Veja `examples/exemplo.json`.
 
 ### Campos por tipo
 

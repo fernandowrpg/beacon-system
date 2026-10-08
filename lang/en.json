@@ -393,6 +393,34 @@
     "Ruler": {
       "spaces": "sp.",
       "outOfRange": "Out of range"
+    },
+    "Creator": {
+      "title": "BEACON Creator",
+      "button": "BEACON Creator",
+      "tabForm": "Form",
+      "tabJson": "Paste JSON",
+      "img": "Image (path)",
+      "lbName": "Limit Break name",
+      "lbEffect": "Limit Break effect",
+      "skills": "Background skills (one per line: Name | rank)",
+      "create": "Create",
+      "createOpen": "Create and open sheet",
+      "reset": "Clear fields",
+      "created": "{name} created.",
+      "needName": "Give it a name before creating.",
+      "feature": "Feature",
+      "addFeature": "Add feature",
+      "removeFeature": "Remove",
+      "noFeatures": "No features yet.",
+      "textHint": "Free text. A blank line separates paragraphs.",
+      "attribute": "Attribute",
+      "hUsage": "Usage",
+      "hDamage": "Damage and costs",
+      "hOrigin": "Source",
+      "hSlots": "Slots",
+      "hTiers": "Attributes by tier",
+      "hFeatures": "Features",
+      "hScores": "Ability scores"
     }
   }
 }

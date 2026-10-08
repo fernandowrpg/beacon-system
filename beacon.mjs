@@ -12,10 +12,11 @@ import { onHoverToken } from "./module/canvas/distance.mjs";
 import * as distance from "./module/canvas/distance.mjs";
 import { openImporter, importBeaconData, addImportButton } from "./module/importer.mjs";
 import * as rolls from "./module/rolls.mjs";
+import { BeaconCreator, openCreator } from "./module/apps/creator.mjs";
 
 Hooks.once("init", () => {
   CONFIG.BEACON = BEACON;
-  game.beacon = { rolls, distance, openImporter, importBeaconData };
+  game.beacon = { rolls, distance, openCreator, BeaconCreator, openImporter, importBeaconData };
 
   CONFIG.Actor.documentClass = BeaconActor;
   CONFIG.Item.documentClass = BeaconItem;

@@ -393,6 +393,34 @@
     "Ruler": {
       "spaces": "esp.",
       "outOfRange": "Fora de alcance"
+    },
+    "Creator": {
+      "title": "Cadastro BEACON",
+      "button": "Cadastro BEACON",
+      "tabForm": "Formulário",
+      "tabJson": "Colar JSON",
+      "img": "Imagem (caminho)",
+      "lbName": "Nome do Limit Break",
+      "lbEffect": "Efeito do Limit Break",
+      "skills": "Background skills (uma por linha: Nome | rank)",
+      "create": "Criar",
+      "createOpen": "Criar e abrir ficha",
+      "reset": "Limpar campos",
+      "created": "{name} criado.",
+      "needName": "Dê um nome antes de criar.",
+      "feature": "Feature",
+      "addFeature": "Adicionar feature",
+      "removeFeature": "Remover",
+      "noFeatures": "Nenhuma feature ainda.",
+      "textHint": "Texto livre. Linha em branco separa parágrafos.",
+      "attribute": "Atributo",
+      "hUsage": "Uso",
+      "hDamage": "Dano e custos",
+      "hOrigin": "Origem",
+      "hSlots": "Slots",
+      "hTiers": "Atributos por tier",
+      "hFeatures": "Features",
+      "hScores": "Ability scores"
     }
   }
 }

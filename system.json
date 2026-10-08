@@ -2,7 +2,7 @@
   "id": "beacon",
   "title": "BEACON",
   "description": "Sistema não oficial para o RPG tático de fantasia BEACON (inspirado em Lancer e Final Fantasy). Fichas de beacon e NPC, fases de combate, Accuracy/Difficulty, Wounds/Overstress, Surge e cartões de ataque e dano.",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -28,6 +28,53 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "npcs",
+      "label": "BEACON — Inimigos",
+      "path": "packs/npcs",
+      "type": "Actor",
+      "system": "beacon",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "npc-templates",
+      "label": "BEACON — Templates de NPC",
+      "path": "packs/npc-templates",
+      "type": "Item",
+      "system": "beacon",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "npc-features",
+      "label": "BEACON — Features universais de NPC",
+      "path": "packs/npc-features",
+      "type": "Item",
+      "system": "beacon",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "BEACON",
+      "sorting": "m",
+      "color": "#2b5fb8",
+      "packs": [
+        "npcs",
+        "npc-templates",
+        "npc-features"
+      ]
     }
   ],
   "documentTypes": {
@@ -100,7 +147,7 @@
   "initiative": "0",
   "url": "https://github.com/fernandowrpg/beacon-system",
   "manifest": "https://github.com/fernandowrpg/beacon-system/releases/latest/download/system.json",
-  "download": "https://github.com/fernandowrpg/beacon-system/releases/download/v0.2.0/beacon.zip",
+  "download": "https://github.com/fernandowrpg/beacon-system/releases/download/v0.4.0/beacon.zip",
   "bugs": "https://github.com/fernandowrpg/beacon-system/issues",
   "readme": "https://github.com/fernandowrpg/beacon-system/blob/main/README.md"
 }

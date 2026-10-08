@@ -1,0 +1,14 @@
+{
+  "name": "beacon-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "python -I tools/build-data.py",
+    "build:packs": "node tools/build-packs.mjs",
+    "build": "npm run build:data && npm run build:packs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.1.0"
+  },
+  "version": "0.4.0"
+}

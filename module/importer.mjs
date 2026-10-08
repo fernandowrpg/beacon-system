@@ -68,10 +68,10 @@ export function addImportButton(app, html) {
   const btn = document.createElement("button");
   btn.type = "button";
   btn.className = "beacon-import-btn";
-  btn.innerHTML = `<i class="fa-solid fa-file-import"></i> ${t("BEACON.Import.button")}`;
+  btn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> ${t("BEACON.Creator.button")}`;
   btn.addEventListener("click", ev => {
     ev.preventDefault();
-    openImporter();
+    game.beacon.openCreator();
   });
   target.append(btn);
 }

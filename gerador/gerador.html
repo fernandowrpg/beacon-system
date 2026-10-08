@@ -1,0 +1,560 @@
+<title>Gerador de Importação BEACON</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: two-pane workbench, form on the left, document list and JSON output on the right; stacks on phones. */
+:root {
+  --bg: #eef1f6;
+  --panel: #ffffff;
+  --ink: #18202f;
+  --muted: #5b6579;
+  --line: #d3d9e5;
+  --accent: #2b5fb8;
+  --accent-ink: #ffffff;
+  --gold: #a87814;
+  --danger: #b23a3a;
+  --ok: #2a7a4b;
+  --field: #f7f9fc;
+  --font-display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12161f; --panel: #1b2130; --ink: #e6eaf3; --muted: #9aa4bb; --line: #2f374a;
+    --accent: #79a5f2; --accent-ink: #0e1420; --gold: #e0b453; --danger: #ef7d7d; --ok: #6fcf97; --field: #151a26;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12161f; --panel: #1b2130; --ink: #e6eaf3; --muted: #9aa4bb; --line: #2f374a;
+  --accent: #79a5f2; --accent-ink: #0e1420; --gold: #e0b453; --danger: #ef7d7d; --ok: #6fcf97; --field: #151a26;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.45; padding-inline: 16px; padding-block: 20px 40px; }
+.wrap { max-width: 1280px; margin-inline: auto; display: grid; gap: 18px; }
+header.top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+h1 { font-family: var(--font-display); font-size: 1.7rem; letter-spacing: 0.04em; margin: 0; text-wrap: balance; }
+h1 span { color: var(--gold); }
+.lede { color: var(--muted); margin: 0; max-width: 62ch; }
+h2 { font-family: var(--font-display); font-size: 1.05rem; letter-spacing: 0.06em; margin: 0; }
+h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 6px 0 0; grid-column: 1 / -1; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+.grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 900px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.types { display: flex; flex-wrap: wrap; gap: 6px; }
+.types button { border: 1px solid var(--line); background: var(--field); color: var(--ink); border-radius: 999px; padding: 5px 12px; font: 600 0.88rem var(--font-body); cursor: pointer; }
+.types button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.types .sep { width: 1px; background: var(--line); margin-inline: 4px; }
+form .fields { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px 12px; }
+label.f { display: grid; gap: 3px; font-size: 0.8rem; color: var(--muted); font-weight: 600; min-width: 0; }
+label.f.wide { grid-column: 1 / -1; }
+label.f.half { grid-column: span 2; }
+@media (max-width: 480px) { label.f.half { grid-column: 1 / -1; } }
+label.check { display: flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+input, select, textarea { font: 400 0.95rem var(--font-body); color: var(--ink); background: var(--field); border: 1px solid var(--line); border-radius: 5px; padding: 6px 8px; width: 100%; min-width: 0; }
+textarea { min-height: 84px; resize: vertical; }
+input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.hint { color: var(--muted); font-size: 0.82rem; margin: 0; }
+.tiers { overflow-x: auto; grid-column: 1 / -1; }
+.tiers table { border-collapse: collapse; width: 100%; min-width: 520px; font-variant-numeric: tabular-nums; }
+.tiers th, .tiers td { border-bottom: 1px solid var(--line); padding: 3px 4px; text-align: left; font-size: 0.85rem; }
+.tiers th { color: var(--muted); font-weight: 600; }
+.tiers input { padding: 3px 5px; text-align: center; }
+.features { grid-column: 1 / -1; display: grid; gap: 10px; }
+.feature { border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 6px; padding: 10px; display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px 10px; background: var(--field); }
+.feature .row-head { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 0.85rem; color: var(--gold); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+button.btn { border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); border-radius: 6px; padding: 7px 14px; font: 700 0.9rem var(--font-body); cursor: pointer; }
+button.btn.ghost { background: transparent; color: var(--accent); }
+button.btn.danger { border-color: var(--danger); background: transparent; color: var(--danger); }
+button.link { border: none; background: none; color: var(--accent); cursor: pointer; font: 600 0.85rem var(--font-body); padding: 2px 4px; }
+button.link.del { color: var(--danger); }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.list li { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; background: var(--field); min-width: 0; }
+.list li.editing { border-color: var(--accent); }
+.list .name { font-weight: 700; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.chip { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.chip.actor { color: var(--gold); border-color: var(--gold); }
+.empty { color: var(--muted); font-style: italic; margin: 0; }
+pre.json { font: 0.78rem/1.4 var(--font-mono); background: var(--field); border: 1px solid var(--line); border-radius: 6px; padding: 10px; max-height: 360px; overflow: auto; margin: 0; white-space: pre; }
+.status { font-size: 0.85rem; min-height: 1.2em; margin: 0; }
+.status.ok { color: var(--ok); }
+.status.err { color: var(--danger); }
+details summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+details textarea { margin-top: 8px; font-family: var(--font-mono); font-size: 0.8rem; min-height: 120px; }
+.count { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.85rem; }
+@media (prefers-reduced-motion: no-preference) { button { transition: background-color .15s, color .15s; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Gerador de Importação <span>BEACON</span></h1>
+    <p class="lede">Preencha os campos, adicione à lista e copie o JSON. No Foundry, cole no botão <strong>Importar BEACON</strong> da aba Itens ou Atores.</p>
+  </header>
+
+  <div class="grid">
+    <section class="panel" aria-labelledby="form-title">
+      <div class="types" id="types" role="group" aria-label="Tipo de documento"></div>
+      <h2 id="form-title">Habilidade</h2>
+      <form id="form" novalidate>
+        <div class="fields" id="fields"></div>
+      </form>
+      <div class="actions">
+        <button class="btn" type="button" id="save">Adicionar à lista</button>
+        <button class="btn ghost" type="button" id="reset">Limpar campos</button>
+      </div>
+      <p class="status" id="form-status" role="status"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="list-title">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap">
+        <h2 id="list-title">Documentos</h2>
+        <span class="count" id="count"></span>
+      </div>
+      <ul class="list" id="list"></ul>
+      <div class="actions">
+        <button class="btn" type="button" id="copy">Copiar JSON</button>
+        <button class="btn danger" type="button" id="clear">Esvaziar lista</button>
+      </div>
+      <p class="status" id="out-status" role="status"></p>
+      <pre class="json" id="json" tabindex="0" aria-label="JSON gerado"></pre>
+      <details>
+        <summary>Carregar JSON existente para editar</summary>
+        <textarea id="load-text" placeholder='[{"name": "...", "type": "ability", "system": {}}]'></textarea>
+        <div class="actions" style="margin-top:8px">
+          <button class="btn ghost" type="button" id="load">Carregar na lista</button>
+        </div>
+      </details>
+    </section>
+  </div>
+</div>
+
+<script>
+const O = {
+  category: { weapon: "Arma", support: "Item de suporte", spell: "Spell", skill: "Skill", trait: "Trait", limitbreak: "Limit Break" },
+  action: { passive: "Passiva", minor: "Ação menor", free: "Ação livre", reaction: "Reação", special: "Especial", bolster: "Fase Bolster", defend: "Defend", refresh: "Refresh", channel: "Channel", skirmish: "Fase Skirmish", mark: "Mark", search: "Search", volley: "Volley", reposition: "Fase Reposition", hide: "Hide", rush: "Rush", brawl: "Fase Brawl", fight: "Fight", grapple: "Grapple", shove: "Shove", release: "Release", fullattack: "Full Attack", delay: "Delay", ready: "Ready" },
+  attack: { none: "Sem ataque", melee: "Corpo a corpo", ranged: "À distância", auto: "Auto-Hit" },
+  defense: { dodge: "Dodge", adef: "A-Def" },
+  size: { none: "—", light: "Light", main: "Main", heavy: "Heavy" },
+  weaponType: { none: "—", artifact: "Artifact", blade: "Blade", bow: "Bow", club: "Club", longarm: "Longarm", magitech: "Magitech" },
+  damageType: { physical: "Physical", force: "Force", astral: "Astral", lunar: "Lunar", discord: "Discord", stress: "Stress" },
+  usesType: { none: "Ilimitado", limited: "Limited", consumable: "Consumable" },
+  npcFeature: { none: "—", base: "Base", extra: "Extra" },
+  role: { artillery: "Artillery", controller: "Controller", defender: "Defender", striker: "Striker", support: "Support" },
+  charSize: { "0.5": "1/2", "1": "1", "2": "2", "3": "3", "4": "4" },
+  rank3: { 1: "1", 2: "2", 3: "3" },
+  rank03: { 0: "0", 1: "1", 2: "2", 3: "3" },
+  tier: { 1: "T1", 2: "T2", 3: "T3" },
+  kind: { thematic: "Temático", mechanical: "Mecânico" }
+};
+
+const H = t => ({ h: t });
+const TYPES = {
+  ability: { label: "Habilidade", doc: "Item", fields: [
+    ["name", "Nome", "text", { cls: "half", ph: "Ex.: Sword" }], ["img", "Imagem (caminho)", "text", { cls: "half", ph: "icons/svg/sword.svg" }],
+    H("Uso"),
+    ["system.category", "Categoria", "select", { o: O.category, d: "weapon" }], ["system.action", "Ação / ativação", "select", { o: O.action, d: "fight" }],
+    ["system.attack", "Ataque", "select", { o: O.attack, d: "none" }], ["system.defense", "Defesa alvo", "select", { o: O.defense, d: "dodge" }],
+    ["system.size", "Tamanho", "select", { o: O.size, d: "none" }], ["system.weaponType", "Tipo de arma", "select", { o: O.weaponType, d: "none" }],
+    ["system.tags", "Tags", "text", { cls: "half", ph: "Aetheric, Mana 1, Piercing" }], ["system.range", "Range / Reach / Área", "text", { cls: "half", ph: "Range 10, Blast 1" }],
+    H("Dano e custos"),
+    ["system.damage", "Dano", "text", { ph: "1d6+2 ou 4/6/8" }], ["system.damageType", "Tipo de dano", "select", { o: O.damageType, d: "physical" }],
+    ["system.attackBonus", "Bônus de ataque (NPC)", "text", { ph: "+2/4/6" }], ["system.memory", "Memory", "number", { d: 0 }],
+    ["system.mana", "Custo de MP", "number", { d: 0 }], ["system.focus", "Custo de Focus", "number", { d: 0 }],
+    ["system.stressful", "Stressful", "number", { d: 0 }], ["system.armor", "Bônus de Armor", "number", { d: 0 }],
+    ["system.usesType", "Tipo de uso", "select", { o: O.usesType, d: "none" }], ["system.uses.max", "Usos por quest", "number", { d: 0 }],
+    ["system.recharge", "Recharge (X+)", "number", { d: 0 }], ["system.rank", "Rank da classe", "select", { o: O.rank03, d: "0" }],
+    H("Origem"),
+    ["system.source", "Origem", "text", { ph: "Classe Aegis, Básico, Loot…" }], ["system.rarity", "Raridade", "text", { ph: "Uncommon" }],
+    ["system.npcFeature", "Feature de NPC", "select", { o: O.npcFeature, d: "none" }],
+    ["system.equipped", "Equipado", "check", { d: false }], ["system.free", "Equipado de graça", "check", { d: false }], ["system.reloading", "Reloading", "check", { d: false }],
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  job: { label: "Job", doc: "Item", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.className", "Classe", "text", {}], ["system.role", "Papel", "select", { o: O.role, d: "striker" }],
+    H("Atributos base"),
+    ["system.scope", "Scope", "number", { d: 10 }], ["system.saveTarget", "Save Target", "number", { d: 10 }],
+    ["system.hp", "HP", "number", { d: 6 }], ["system.recoveries", "Recoveries", "number", { d: 3 }],
+    ["system.dodge", "Dodge", "number", { d: 8 }], ["system.speed", "Speed", "number", { d: 4 }],
+    ["system.stressCap", "Stress Cap", "number", { d: 6 }], ["system.memory", "Memory", "number", { d: 6 }],
+    ["system.adef", "A-Def", "number", { d: 8 }], ["system.mp", "MP", "number", { d: 3 }],
+    H("Slots"),
+    ["system.weaponSlots", "Slots de arma", "text", { cls: "half", d: "Main, Light" }], ["system.supportSlots", "Slots de suporte", "text", { cls: "half", d: "Main, Light" }],
+    ["system.traits", "Traits do job", "html", { cls: "wide" }],
+    H("Limit Break"),
+    ["system.limitBreak.name", "Nome do Limit Break", "text", { cls: "half" }], ["system.limitBreak.range", "Alcance", "text", {}],
+    ["system.limitBreak.description", "Efeito do Limit Break", "html", { cls: "wide" }],
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  class: { label: "Classe", doc: "Item", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.jobName", "Job", "text", {}], ["system.role", "Papel", "select", { o: O.role, d: "striker" }],
+    ["system.rank", "Rank", "select", { o: O.rank03, d: "1" }],
+    ["system.abilities", "Habilidades por rank", "html", { cls: "wide" }],
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  talent: { label: "Talento", doc: "Item", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.rank", "Rank", "select", { o: O.rank3, d: "1" }],
+    H("Rank 1"), ["system.rank1.name", "Nome", "text", { cls: "wide" }], ["system.rank1.description", "Efeito", "html", { cls: "wide" }],
+    H("Rank 2"), ["system.rank2.name", "Nome", "text", { cls: "wide" }], ["system.rank2.description", "Efeito", "html", { cls: "wide" }],
+    H("Rank 3"), ["system.rank3.name", "Nome", "text", { cls: "wide" }], ["system.rank3.description", "Efeito", "html", { cls: "wide" }],
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  ancestry: { label: "Ancestralidade", doc: "Item", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.size", "Size", "select", { o: O.charSize, d: "1" }],
+    ["system.traits", "Traits de ancestralidade", "html", { cls: "wide" }],
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  supply: { label: "Suprimento", doc: "Item", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.quantity", "Quantidade", "number", { d: 1 }], ["system.cost", "Custo (Gold)", "number", { d: 0 }],
+    ["system.equipped", "Equipado", "check", { d: false }],
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  template: { label: "Template de NPC", doc: "Item", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.kind", "Tipo", "select", { o: O.kind, d: "thematic" }],
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  npc: { label: "NPC", doc: "Actor", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.npcType", "Tipo de NPC", "text", {}], ["system.role", "Papel", "select", { o: O.role, d: "striker" }],
+    ["system.tier", "Tier inicial", "select", { o: O.tier, d: "1" }], ["system.size", "Size", "select", { o: O.charSize, d: "1" }],
+    ["system.turns", "Turnos por rodada", "number", { d: 1 }], ["system.templates", "Templates", "text", { ph: "Elite, Undead" }],
+    ["system.wounds.max", "Wound Cap", "number", { d: 1 }], ["system.overstress.max", "Overstress Cap", "number", { d: 1 }],
+    ["system.resistances", "Resistências", "text", { ph: "lunar, stress" }], ["system.immunities", "Imunidades", "text", {}],
+    H("Atributos por tier"), { tiers: true },
+    H("Features"), { features: true },
+    ["system.description", "Descrição", "html", { cls: "wide" }]
+  ]},
+  beacon: { label: "Beacon (PC)", doc: "Actor", fields: [
+    ["name", "Nome", "text", { cls: "half" }], ["system.title", "Título", "text", { cls: "half" }],
+    ["system.level", "Nível", "number", { d: 1 }], ["system.gold", "Gold", "number", { d: 0 }], ["system.residuum", "Residuum", "number", { d: 0 }],
+    H("Ability scores"),
+    ["system.abilities.bulk", "Bulk", "number", { d: 0 }], ["system.abilities.agility", "Agility", "number", { d: 0 }],
+    ["system.abilities.mind", "Mind", "number", { d: 0 }], ["system.abilities.magic", "Magic", "number", { d: 0 }],
+    ["skills", "Background skills (uma por linha: Nome | rank)", "textarea", { cls: "wide", ph: "Truthseeker | 2\nDisciple of the Sun | 1" }],
+    ["system.biography", "Biografia", "html", { cls: "wide" }]
+  ]}
+};
+
+const TIER_STATS = [["hp", "HP"], ["stressCap", "Stress Cap"], ["dodge", "Dodge"], ["adef", "A-Def"], ["speed", "Speed"], ["mp", "MP"], ["armor", "Armor"], ["saveTarget", "Save Target"], ["scope", "Scope"], ["initiative", "Iniciativa"], ["bulk", "Bulk"], ["agility", "Agility"], ["mind", "Mind"], ["magic", "Magic"]];
+const TIER_DEFAULT = { hp: 10, stressCap: 6, dodge: 10, adef: 8, speed: 4, mp: 0, armor: 0, saveTarget: 10, scope: 5, initiative: 4, bulk: 0, agility: 0, mind: 0, magic: 0 };
+const FEATURE_FIELDS = [
+  ["name", "Nome", "text", { cls: "half" }], ["system.npcFeature", "Feature", "select", { o: { base: "Base", extra: "Extra" }, d: "base" }],
+  ["system.category", "Categoria", "select", { o: O.category, d: "weapon" }], ["system.action", "Ação", "select", { o: O.action, d: "fight" }],
+  ["system.attack", "Ataque", "select", { o: O.attack, d: "melee" }], ["system.defense", "Defesa", "select", { o: O.defense, d: "dodge" }],
+  ["system.attackBonus", "Bônus de ataque", "text", { ph: "+2/4/6" }], ["system.range", "Alcance", "text", { ph: "Reach 1" }],
+  ["system.damage", "Dano", "text", { ph: "4/6/8" }], ["system.damageType", "Tipo de dano", "select", { o: O.damageType, d: "physical" }],
+  ["system.tags", "Tags", "text", { ph: "Piercing" }], ["system.mana", "MP", "number", { d: 0 }], ["system.recharge", "Recharge", "number", { d: 0 }],
+  ["system.description", "Descrição", "html", { cls: "wide" }]
+];
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const toHTML = text => String(text ?? "").trim() ? String(text).trim().split(/\n\s*\n/).map(p => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("") : "";
+const fromHTML = html => {
+  if (!html) return "";
+  const prepared = String(html).replace(/<\/p>\s*<p[^>]*>/gi, "\n\n").replace(/<br\s*\/?>/gi, "\n").replace(/<\/li>\s*<li[^>]*>/gi, "\n");
+  return new DOMParser().parseFromString(prepared, "text/html").body.textContent.trim();
+};
+const getPath = (obj, path) => path.split(".").reduce((o, k) => (o == null ? undefined : o[k]), obj);
+const setPath = (obj, path, value) => {
+  const keys = path.split(".");
+  let cur = obj;
+  keys.slice(0, -1).forEach(k => { cur = cur[k] ??= {}; });
+  cur[keys.at(-1)] = value;
+};
+
+let state = { type: "ability", entries: [], editing: null };
+let features = [];
+let tiers = { 1: { ...TIER_DEFAULT }, 2: { ...TIER_DEFAULT }, 3: { ...TIER_DEFAULT } };
+
+function load() {
+  try {
+    const saved = JSON.parse(localStorage.getItem("beacon-gerador") || "null");
+    if (saved?.entries) state.entries = saved.entries;
+  } catch {}
+}
+function persist() {
+  try { localStorage.setItem("beacon-gerador", JSON.stringify({ entries: state.entries })); } catch {}
+}
+
+function fieldHTML(def, value, prefix = "") {
+  const [key, label, kind, opt = {}] = def;
+  const id = `${prefix}f-${key.replace(/\./g, "-")}`;
+  const cls = opt.cls ? ` ${opt.cls}` : "";
+  const v = value ?? opt.d ?? "";
+  if (kind === "check") return `<label class="check${cls}"><input type="checkbox" id="${id}" data-key="${key}" ${v ? "checked" : ""}> ${label}</label>`;
+  let input;
+  if (kind === "select") input = `<select id="${id}" data-key="${key}">${Object.entries(opt.o).map(([k, l]) => `<option value="${esc(k)}" ${String(k) === String(v) ? "selected" : ""}>${esc(l)}</option>`).join("")}</select>`;
+  else if (kind === "textarea" || kind === "html") input = `<textarea id="${id}" data-key="${key}" data-kind="${kind}" placeholder="${esc(opt.ph ?? (kind === "html" ? "Texto livre. Linha em branco separa parágrafos." : ""))}">${esc(v)}</textarea>`;
+  else input = `<input id="${id}" type="${kind === "number" ? "number" : "text"}" data-key="${key}" data-kind="${kind}" value="${esc(v)}" placeholder="${esc(opt.ph ?? "")}">`;
+  return `<label class="f${cls}" for="${id}">${label}${input}</label>`;
+}
+
+function renderTypes() {
+  const order = ["ability", "job", "class", "talent", "ancestry", "supply", "template", "|", "npc", "beacon"];
+  document.getElementById("types").innerHTML = order.map(t => t === "|" ? `<span class="sep" aria-hidden="true"></span>` :
+    `<button type="button" data-type="${t}" aria-pressed="${t === state.type}">${TYPES[t].label}</button>`).join("");
+}
+
+function renderTiers() {
+  return `<div class="tiers"><table><thead><tr><th>Atributo</th><th>T1</th><th>T2</th><th>T3</th></tr></thead><tbody>${
+    TIER_STATS.map(([k, l]) => `<tr><th scope="row">${l}</th>${[1, 2, 3].map(t => `<td><input type="number" id="tier-${t}-${k}" data-tier="${t}" data-stat="${k}" value="${tiers[t][k]}" aria-label="${l} T${t}"></td>`).join("")}</tr>`).join("")
+  }</tbody></table></div>`;
+}
+
+function renderFeatures() {
+  const rows = features.map((f, i) => `<div class="feature" data-index="${i}">
+    <div class="row-head"><span>Feature ${i + 1}</span><button type="button" class="link del" data-remove-feature="${i}">Remover</button></div>
+    ${FEATURE_FIELDS.map(def => fieldHTML(def, def[2] === "html" ? fromHTML(getPath(f, def[0])) : getPath(f, def[0]), `feat${i}-`)).join("")}
+  </div>`).join("");
+  return `<div class="features" id="features">${rows || `<p class="empty">Nenhuma feature ainda.</p>`}<div><button type="button" class="btn ghost" id="add-feature">+ Feature</button></div></div>`;
+}
+
+function renderForm(values = null) {
+  const def = TYPES[state.type];
+  document.getElementById("form-title").textContent = def.label;
+  document.getElementById("fields").innerHTML = def.fields.map(f => {
+    if (f.h) return `<h3>${f.h}</h3>`;
+    if (f.tiers) return renderTiers();
+    if (f.features) return renderFeatures();
+    let v = values ? getPath(values, f[0]) : undefined;
+    if (f[2] === "html" && values) v = fromHTML(v);
+    if (f[0] === "skills" && values) v = (values.system?.backgroundSkills ?? []).map(s => `${s.name} | ${s.rank}`).join("\n");
+    return fieldHTML(f, v);
+  }).join("");
+  document.getElementById("save").textContent = state.editing !== null ? "Salvar alterações" : "Adicionar à lista";
+}
+
+function readField(el) {
+  if (el.type === "checkbox") return el.checked;
+  if (el.dataset.kind === "number") return el.value === "" ? 0 : Number(el.value);
+  if (el.dataset.kind === "html") return toHTML(el.value);
+  return el.value;
+}
+
+function syncFeaturesFromDOM() {
+  document.querySelectorAll("#features .feature").forEach(card => {
+    const i = Number(card.dataset.index);
+    const f = { type: "ability", system: {} };
+    card.querySelectorAll("[data-key]").forEach(el => setPath(f, el.dataset.key, readField(el)));
+    f.system.equipped = f.system.npcFeature !== "extra";
+    features[i] = f;
+  });
+}
+
+function syncTiersFromDOM() {
+  document.querySelectorAll("[data-tier]").forEach(el => { tiers[el.dataset.tier][el.dataset.stat] = Number(el.value) || 0; });
+}
+
+function buildDoc({ syncFeatures = true } = {}) {
+  const def = TYPES[state.type];
+  const doc = { name: "", type: state.type, system: {} };
+  document.querySelectorAll("#fields > label [data-key], #fields > label.check [data-key]").forEach(el => {
+    if (el.closest(".feature")) return;
+    const key = el.dataset.key;
+    if (key === "skills") {
+      doc.system.backgroundSkills = el.value.split("\n").map(l => l.trim()).filter(Boolean).map(l => {
+        const [name, rank] = l.split("|").map(s => s.trim());
+        return { name, rank: Math.min(3, Math.max(1, Number(rank) || 1)) };
+      });
+      return;
+    }
+    const value = readField(el);
+    if (key === "img" && !value) return;
+    setPath(doc, key, value);
+  });
+  if (state.type === "ability") doc.system.uses = { value: doc.system.uses?.max ?? 0, max: doc.system.uses?.max ?? 0 };
+  if (["system.rank", "system.tier"].some(k => getPath(doc, k) !== undefined)) {
+    if (doc.system.rank !== undefined) doc.system.rank = Number(doc.system.rank);
+    if (doc.system.tier !== undefined) doc.system.tier = Number(doc.system.tier);
+  }
+  if (state.type === "npc") {
+    syncTiersFromDOM();
+    if (syncFeatures) syncFeaturesFromDOM();
+    doc.system.tiers = JSON.parse(JSON.stringify(tiers));
+    const t = tiers[doc.system.tier || 1];
+    doc.system.hp = { value: t.hp, max: t.hp };
+    doc.system.mp = { value: t.mp, max: t.mp };
+    doc.system.wounds = { value: 0, max: doc.system.wounds?.max || 1 };
+    doc.system.overstress = { value: 0, max: doc.system.overstress?.max || 1 };
+    doc.items = features.filter(f => f.name).map(f => ({ ...f, img: imgFor(f.system.category), system: { ...f.system, uses: { value: 0, max: 0 } } }));
+  }
+  if (state.type === "ability" && !doc.img) doc.img = imgFor(doc.system.category);
+  if (def.doc === "Item" && !doc.img) delete doc.img;
+  return doc;
+}
+
+function imgFor(category) {
+  return { weapon: "icons/svg/sword.svg", support: "icons/svg/shield.svg", spell: "icons/svg/lightning.svg", skill: "icons/svg/upgrade.svg", trait: "icons/svg/aura.svg", limitbreak: "icons/svg/explosion.svg" }[category] ?? "icons/svg/aura.svg";
+}
+
+function renderList() {
+  const list = document.getElementById("list");
+  const n = state.entries.length;
+  document.getElementById("count").textContent = `${n} ${n === 1 ? "documento" : "documentos"}`;
+  list.innerHTML = n ? state.entries.map((e, i) => `<li class="${state.editing === i ? "editing" : ""}">
+      <span class="chip ${TYPES[e.type]?.doc === "Actor" ? "actor" : ""}">${esc(TYPES[e.type]?.label ?? e.type)}</span>
+      <span class="name">${esc(e.name || "(sem nome)")}${e.items?.length ? ` <span class="count">· ${e.items.length} features</span>` : ""}</span>
+      <button type="button" class="link" data-edit="${i}">Editar</button>
+      <button type="button" class="link del" data-del="${i}">Excluir</button>
+    </li>`).join("") : `<li><p class="empty">A lista está vazia. Preencha o formulário e clique em "Adicionar à lista".</p></li>`;
+  document.getElementById("json").textContent = JSON.stringify(state.entries, null, 2);
+}
+
+function setStatus(id, text, kind = "ok") {
+  const el = document.getElementById(id);
+  el.textContent = text;
+  el.className = `status ${kind}`;
+}
+
+function selectType(type, values = null) {
+  state.type = type;
+  if (type === "npc") {
+    features = values?.items ? JSON.parse(JSON.stringify(values.items)) : [];
+    const src = values?.system?.tiers;
+    tiers = { 1: { ...TIER_DEFAULT, ...(src?.[1] ?? {}) }, 2: { ...TIER_DEFAULT, ...(src?.[2] ?? {}) }, 3: { ...TIER_DEFAULT, ...(src?.[3] ?? {}) } };
+  }
+  renderTypes();
+  renderForm(values);
+}
+
+document.getElementById("types").addEventListener("click", e => {
+  const btn = e.target.closest("button[data-type]");
+  if (!btn) return;
+  state.editing = null;
+  selectType(btn.dataset.type);
+  renderList();
+  setStatus("form-status", "");
+});
+
+document.getElementById("fields").addEventListener("click", e => {
+  if (e.target.id === "add-feature") {
+    syncTiersFromDOM();
+    syncFeaturesFromDOM();
+    features.push({ type: "ability", name: "", system: { npcFeature: "base", category: "weapon", action: "fight", attack: "melee" } });
+    const keep = buildDoc();
+    renderForm(keep);
+    document.querySelector(`#features .feature[data-index="${features.length - 1}"] input`)?.focus();
+  }
+  const rm = e.target.closest("[data-remove-feature]");
+  if (rm) {
+    syncTiersFromDOM();
+    syncFeaturesFromDOM();
+    features.splice(Number(rm.dataset.removeFeature), 1);
+    renderForm(buildDoc({ syncFeatures: false }));
+  }
+});
+
+document.getElementById("save").addEventListener("click", () => {
+  const doc = buildDoc();
+  if (!doc.name.trim()) {
+    setStatus("form-status", "Dê um nome ao documento antes de adicionar.", "err");
+    document.querySelector('[data-key="name"]')?.focus();
+    return;
+  }
+  if (state.editing !== null) {
+    state.entries[state.editing] = doc;
+    setStatus("form-status", `"${doc.name}" atualizado.`);
+    state.editing = null;
+  } else {
+    state.entries.push(doc);
+    setStatus("form-status", `"${doc.name}" adicionado à lista.`);
+  }
+  persist();
+  selectType(state.type);
+  renderList();
+});
+
+document.getElementById("reset").addEventListener("click", () => {
+  state.editing = null;
+  selectType(state.type);
+  renderList();
+  setStatus("form-status", "Campos limpos.");
+});
+
+document.getElementById("list").addEventListener("click", e => {
+  const edit = e.target.closest("[data-edit]");
+  const del = e.target.closest("[data-del]");
+  if (edit) {
+    const i = Number(edit.dataset.edit);
+    const entry = state.entries[i];
+    if (!TYPES[entry.type]) return setStatus("form-status", `O tipo "${entry.type}" não é editável aqui.`, "err");
+    state.editing = i;
+    selectType(entry.type, entry);
+    renderList();
+    setStatus("form-status", `Editando "${entry.name}".`);
+    document.getElementById("form-title").scrollIntoView({ block: "start" });
+  }
+  if (del) {
+    const i = Number(del.dataset.del);
+    const [removed] = state.entries.splice(i, 1);
+    if (state.editing === i) { state.editing = null; selectType(state.type); }
+    else if (state.editing !== null && state.editing > i) state.editing -= 1;
+    persist();
+    renderList();
+    setStatus("out-status", `"${removed.name}" removido da lista.`);
+  }
+});
+
+let clearArmed = false;
+document.getElementById("clear").addEventListener("click", e => {
+  if (!state.entries.length) return;
+  if (!clearArmed) {
+    clearArmed = true;
+    e.target.textContent = "Confirmar: esvaziar";
+    setStatus("out-status", "Clique de novo para apagar todos os documentos da lista.", "err");
+    setTimeout(() => { clearArmed = false; e.target.textContent = "Esvaziar lista"; }, 4000);
+    return;
+  }
+  clearArmed = false;
+  e.target.textContent = "Esvaziar lista";
+  state.entries = [];
+  state.editing = null;
+  persist();
+  renderList();
+  setStatus("out-status", "Lista esvaziada.");
+});
+
+document.getElementById("copy").addEventListener("click", async () => {
+  const text = JSON.stringify(state.entries, null, 2);
+  try {
+    await navigator.clipboard.writeText(text);
+    setStatus("out-status", `JSON copiado (${state.entries.length} documentos). Cole em Importar BEACON no Foundry.`);
+  } catch {
+    const range = document.createRange();
+    range.selectNodeContents(document.getElementById("json"));
+    const sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    setStatus("out-status", "Não deu para copiar automaticamente. O JSON está selecionado: use Ctrl+C.", "err");
+  }
+});
+
+document.getElementById("load").addEventListener("click", () => {
+  const raw = document.getElementById("load-text").value.trim();
+  if (!raw) return setStatus("out-status", "Cole um JSON no campo acima.", "err");
+  try {
+    const data = JSON.parse(raw);
+    const list = Array.isArray(data) ? data : [...(data.items ?? []), ...(data.actors ?? [])];
+    const valid = list.filter(d => d && d.name && d.type);
+    state.entries.push(...valid);
+    persist();
+    renderList();
+    document.getElementById("load-text").value = "";
+    setStatus("out-status", `${valid.length} documentos carregados na lista.`);
+  } catch (err) {
+    setStatus("out-status", `JSON inválido: ${err.message}`, "err");
+  }
+});
+
+load();
+if (!state.entries.length) {
+  state.entries = [{
+    name: "Exemplo: Lâmina de Treino", type: "ability", img: "icons/svg/sword.svg",
+    system: { category: "weapon", action: "fight", attack: "melee", defense: "dodge", size: "main", weaponType: "blade", tags: "Reliable 1", range: "Reach 1", attackBonus: "", damage: "1d6", damageType: "physical", memory: 0, mana: 0, focus: 0, stressful: 0, armor: 0, usesType: "none", uses: { value: 0, max: 0 }, recharge: 0, rank: 0, source: "exemplo", rarity: "", npcFeature: "none", equipped: false, free: false, reloading: false, description: "<p>Item de exemplo. Exclua quando adicionar os seus.</p>" }
+  }];
+}
+selectType("ability");
+renderList();
+</script>
