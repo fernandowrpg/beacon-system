@@ -1,0 +1,30 @@
+<section class="tab narrative {{tabs.narrative.cssClass}}" data-group="primary" data-tab="narrative">
+  <div class="narrative-resources">
+    <label>{{localize "BEACON.Narrative.gold"}} <input type="number" name="system.gold" value="{{system.gold}}" min="0" max="10"></label>
+    <label>{{localize "BEACON.Narrative.residuum"}} <input type="number" name="system.residuum" value="{{system.residuum}}" min="0"></label>
+  </div>
+
+  <div class="ability-group">
+    <h3>{{localize "BEACON.Narrative.backgroundSkills"}} <a class="add" data-action="skillAdd"><i class="fa-solid fa-plus"></i></a></h3>
+    <ol class="skill-list">
+      {{#each skills as |s|}}
+      <li>
+        <a data-action="skillRoll" data-index="{{s.index}}" data-tooltip="BEACON.Narrative.skillCheck"><i class="fa-solid fa-dice-d20"></i></a>
+        <input type="text" name="system.backgroundSkills.{{s.index}}.name" value="{{s.name}}">
+        <select name="system.backgroundSkills.{{s.index}}.rank">{{selectOptions @root.rankOptions selected=s.rank}}</select>
+        <a data-action="skillDelete" data-index="{{s.index}}"><i class="fa-solid fa-trash"></i></a>
+      </li>
+      {{/each}}
+    </ol>
+    <p class="hint">{{localize "BEACON.Narrative.skillHint"}}</p>
+  </div>
+
+  <div class="ability-group">
+    <h3>{{localize "BEACON.Narrative.biography"}}</h3>
+    <prose-mirror name="system.biography" value="{{system.biography}}" toggled>{{{enriched.biography}}}</prose-mirror>
+  </div>
+  <div class="ability-group">
+    <h3>{{localize "BEACON.Narrative.notes"}}</h3>
+    <prose-mirror name="system.notes" value="{{system.notes}}" toggled>{{{enriched.notes}}}</prose-mirror>
+  </div>
+</section>

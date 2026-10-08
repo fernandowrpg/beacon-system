@@ -1,0 +1,40 @@
+<div class="form-grid">
+  <label>{{localize "BEACON.Item.category"}} <select name="system.category">{{selectOptions config.abilityCategories selected=system.category localize=true}}</select></label>
+  <label>{{localize "BEACON.Item.action"}} <select name="system.action">{{selectOptions config.actions selected=system.action localize=true}}</select></label>
+  <label>{{localize "BEACON.Item.attack"}} <select name="system.attack">{{selectOptions config.attackTypes selected=system.attack localize=true}}</select></label>
+  <label>{{localize "BEACON.Item.defense"}} <select name="system.defense">{{selectOptions config.defenses selected=system.defense localize=true}}</select></label>
+  <label>{{localize "BEACON.Item.size"}} <select name="system.size">{{selectOptions config.sizes selected=system.size localize=true}}</select></label>
+  <label>{{localize "BEACON.Item.weaponType"}} <select name="system.weaponType">{{selectOptions config.weaponTypes selected=system.weaponType localize=true}}</select></label>
+</div>
+<div class="form-grid wide">
+  <label>{{localize "BEACON.Item.tags"}} <input type="text" name="system.tags" value="{{system.tags}}" placeholder="Aetheric, Mana 1, Piercing"></label>
+  <label>{{localize "BEACON.Item.range"}} <input type="text" name="system.range" value="{{system.range}}" placeholder="Range 10, Blast 1 / Reach 1"></label>
+</div>
+<div class="form-grid">
+  <label>{{localize "BEACON.Item.damage"}} <input type="text" name="system.damage" value="{{system.damage}}" placeholder="1d6+2 / 4/6/8"></label>
+  <label>{{localize "BEACON.Item.damageType"}} <select name="system.damageType">{{selectOptions config.damageTypes selected=system.damageType localize=true}}</select></label>
+  <label>{{localize "BEACON.Item.attackBonus"}} <input type="text" name="system.attackBonus" value="{{system.attackBonus}}" placeholder="+2/4/6"></label>
+  <label>{{localize "BEACON.Attr.memory"}} <input type="number" name="system.memory" value="{{system.memory}}" min="0"></label>
+  <label>{{localize "BEACON.Item.mana"}} <input type="number" name="system.mana" value="{{system.mana}}" min="0"></label>
+  <label>{{localize "BEACON.Attr.focus"}} <input type="number" name="system.focus" value="{{system.focus}}" min="0"></label>
+  <label>{{localize "BEACON.Item.stressful"}} <input type="number" name="system.stressful" value="{{system.stressful}}" min="0"></label>
+  <label>{{localize "BEACON.Attr.armor"}} <input type="number" name="system.armor" value="{{system.armor}}"></label>
+  <label>{{localize "BEACON.Item.usesType"}} <select name="system.usesType">{{selectOptions config.usesTypes selected=system.usesType localize=true}}</select></label>
+  <label>{{localize "BEACON.Item.uses"}} <span class="pair"><input type="number" name="system.uses.value" value="{{system.uses.value}}"> / <input type="number" name="system.uses.max" value="{{system.uses.max}}"></span></label>
+  <label>{{localize "BEACON.NPC.recharge"}} <input type="number" name="system.recharge" value="{{system.recharge}}" min="0" max="6"></label>
+  <label>{{localize "BEACON.Item.rank"}} <select name="system.rank">{{selectOptions classRankOptions selected=system.rank}}</select></label>
+  <label>{{localize "BEACON.Item.source"}} <input type="text" name="system.source" value="{{system.source}}"></label>
+  <label>{{localize "BEACON.Item.rarity"}} <input type="text" name="system.rarity" value="{{system.rarity}}"></label>
+  <label>{{localize "BEACON.Item.npcFeature"}} <select name="system.npcFeature">{{selectOptions config.npcFeatureTypes selected=system.npcFeature localize=true}}</select></label>
+</div>
+<div class="checks">
+  <label><input type="checkbox" name="system.equipped" {{checked system.equipped}}> {{localize "BEACON.Sheet.equipped"}}</label>
+  <label><input type="checkbox" name="system.free" {{checked system.free}}> {{localize "BEACON.Item.free"}}</label>
+  <label><input type="checkbox" name="system.reloading" {{checked system.reloading}}> {{localize "BEACON.Item.reloading"}}</label>
+  <label><input type="checkbox" name="system.loaded" {{checked system.loaded}}> {{localize "BEACON.Sheet.loaded"}}</label>
+  <label><input type="checkbox" name="system.charged" {{checked system.charged}}> {{localize "BEACON.Sheet.charged"}}</label>
+  <label><input type="checkbox" name="system.destroyed" {{checked system.destroyed}}> {{localize "BEACON.Sheet.destroyed"}}</label>
+</div>
+<p class="hint">{{localize "BEACON.Item.tagsHint"}}</p>
+<h3>{{localize "BEACON.Sheet.description"}}</h3>
+<prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>

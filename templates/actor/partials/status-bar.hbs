@@ -1,0 +1,5 @@
+<div class="status-bar">
+  {{#each statusList as |s|}}
+  <a class="status-toggle {{#if s.active}}active{{/if}}" data-action="toggleStatus" data-status="{{s.id}}" data-tooltip="{{s.label}}"><img src="{{s.img}}" alt="{{s.label}}"></a>
+  {{/each}}
+</div>

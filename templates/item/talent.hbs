@@ -1,0 +1,12 @@
+<div class="form-grid">
+  <label>{{localize "BEACON.Item.rank"}} <select name="system.rank">{{selectOptions rankOptions selected=system.rank}}</select></label>
+</div>
+{{#each talentRanks as |r|}}
+<div class="talent-rank">
+  <h3>{{localize "BEACON.Item.rank"}} {{r.rank}}</h3>
+  <input type="text" name="{{r.path}}.name" value="{{r.name}}" placeholder="{{localize 'BEACON.Sheet.name'}}">
+  <prose-mirror name="{{r.path}}.description" value="{{r.raw}}" toggled>{{{r.enriched}}}</prose-mirror>
+</div>
+{{/each}}
+<h3>{{localize "BEACON.Sheet.description"}}</h3>
+<prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>

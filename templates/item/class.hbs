@@ -1,0 +1,10 @@
+<div class="form-grid">
+  <label>{{localize "BEACON.Item.rank"}} <select name="system.rank">{{selectOptions classRankOptions selected=system.rank}}</select></label>
+  <label>{{localize "BEACON.NPC.role"}} <select name="system.role">{{selectOptions config.roles selected=system.role localize=true}}</select></label>
+  <label>{{localize "TYPES.Item.job"}} <input type="text" name="system.jobName" value="{{system.jobName}}"></label>
+</div>
+<h3>{{localize "BEACON.Class.abilities"}}</h3>
+<p class="hint">{{localize "BEACON.Class.abilitiesHint"}}</p>
+<prose-mirror name="system.abilities" value="{{system.abilities}}" toggled>{{{enriched.abilities}}}</prose-mirror>
+<h3>{{localize "BEACON.Sheet.description"}}</h3>
+<prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>

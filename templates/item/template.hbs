@@ -1,0 +1,5 @@
+<div class="form-grid">
+  <label>{{localize "BEACON.Template.kind"}} <select name="system.kind">{{selectOptions config.templateKinds selected=system.kind localize=true}}</select></label>
+</div>
+<h3>{{localize "BEACON.Sheet.description"}}</h3>
+<prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>

@@ -1,0 +1,181 @@
+{
+  "TYPES": {
+    "Actor": { "beacon": "Beacon", "npc": "NPC" },
+    "Item": {
+      "ability": "Habilidade",
+      "job": "Job",
+      "class": "Classe",
+      "talent": "Talento",
+      "ancestry": "Ancestralidade",
+      "supply": "Suprimento",
+      "template": "Template de NPC"
+    }
+  },
+  "BEACON": {
+    "Ability": { "bulk": "Bulk", "agility": "Agility", "mind": "Mind", "magic": "Magic" },
+    "Attr": {
+      "level": "Nível", "grit": "Grit", "size": "Size", "hp": "HP", "tempHp": "HP Temp.", "stress": "Stress",
+      "stressCap": "Stress Cap", "breaking": "Breaking", "bloodied": "Bloodied", "mp": "MP", "focus": "Focus",
+      "recoveries": "Recoveries", "dodge": "Dodge", "adef": "A-Def", "armor": "Armor", "saveTarget": "Save Target",
+      "speed": "Speed", "scope": "Scope", "memory": "Memory", "initiative": "Iniciativa",
+      "resistances": "Resistências", "immunities": "Imunidades", "vulnerabilities": "Vulnerabilidades"
+    },
+    "Tab": { "main": "Combate", "loadout": "Equipamento", "build": "Construção", "narrative": "Narrativa" },
+    "Phase": {
+      "bolster": "Bolster", "channel": "Channel", "skirmish": "Skirmish", "reposition": "Reposition",
+      "brawl": "Brawl", "release": "Release", "fullattack": "Full Attack", "delay": "Delay"
+    },
+    "Action": {
+      "passive": "Passiva", "minor": "Ação Menor", "free": "Ação Livre", "reaction": "Reação", "special": "Especial",
+      "bolster": "Fase Bolster", "defend": "Defend", "refresh": "Refresh", "channel": "Channel",
+      "skirmish": "Fase Skirmish", "mark": "Mark", "search": "Search", "volley": "Volley",
+      "reposition": "Fase Reposition", "hide": "Hide", "rush": "Rush",
+      "brawl": "Fase Brawl", "fight": "Fight", "grapple": "Grapple", "shove": "Shove",
+      "release": "Release", "fullattack": "Full Attack", "delay": "Delay", "ready": "Ready"
+    },
+    "Category": {
+      "weapon": "Armas", "support": "Itens de Suporte", "spell": "Spells", "skill": "Skills",
+      "trait": "Traits", "limitbreak": "Limit Break"
+    },
+    "Attack": { "none": "Sem ataque", "melee": "Corpo a corpo", "ranged": "À distância", "auto": "Auto-Hit" },
+    "Size": { "none": "—", "light": "Light", "main": "Main", "heavy": "Heavy" },
+    "WeaponType": {
+      "none": "—", "artifact": "Artifact", "blade": "Blade", "bow": "Bow", "club": "Club",
+      "longarm": "Longarm", "magitech": "Magitech"
+    },
+    "Damage": {
+      "physical": "Physical", "force": "Force", "astral": "Astral", "lunar": "Lunar",
+      "discord": "Discord", "stress": "Stress"
+    },
+    "Uses": { "none": "Ilimitado", "limited": "Limited", "consumable": "Consumable" },
+    "Role": {
+      "artillery": "Artillery", "controller": "Controller", "defender": "Defender",
+      "striker": "Striker", "support": "Support"
+    },
+    "NPCFeature": { "none": "—", "base": "Features Base", "extra": "Features Extras" },
+    "TemplateKind": { "mechanical": "Mecânico", "thematic": "Temático" },
+    "Condition": {
+      "defeated": "Derrotado", "blinded": "Blinded", "dazed": "Dazed", "disarmed": "Disarmed",
+      "immobilized": "Immobilized", "marked": "Marked", "silenced": "Silenced", "slowed": "Slowed",
+      "stunned": "Stunned", "sundered": "Sundered", "vulnerable": "Vulnerable", "weakened": "Weakened",
+      "bloodied": "Bloodied", "breaking": "Breaking", "engaged": "Engaged", "flying": "Flying",
+      "grappled": "Grappled", "hidden": "Hidden", "invisible": "Invisible", "prone": "Prone",
+      "channeling": "Canalizando", "resistant": "Resistente"
+    },
+    "Outcome": {
+      "hit": "Acerto", "miss": "Erro", "crit": "Crítico", "unknown": "Rolado (sem alvo)",
+      "success": "Sucesso", "failure": "Falha", "invisibleMiss": "Erro (Invisible: 1–3 no d6)"
+    },
+    "Roll": {
+      "accuracy": "Accuracy (+d6)", "difficulty": "Difficulty (−d6)", "bonus": "Modificador fixo",
+      "target": "Alvo (Save Target / CD)", "roll": "Rolar", "vs": "vs", "accShort": "Acc",
+      "check": "Teste de atributo (10+)", "save": "Save (vs Save Target)", "checkShort": "Teste", "saveShort": "Save",
+      "checkTitle": "Teste de {ability}", "saveTitle": "Save de {ability}", "attackTitle": "Ataque: {name}"
+    },
+    "Combat": {
+      "surge": "Surge", "surgeLevel": "Nível de Surge", "phase": "Fase",
+      "choosePhase": "{name}: escolha a fase", "choosePhaseHint": "Em qual fase este beacon vai agir nesta rodada?"
+    },
+    "Harm": {
+      "wound": "Wound", "wounds": "Wounds", "overstress": "Overstress", "overstresses": "Overstress",
+      "woundCap": "Wound Cap", "overstressCap": "Overstress Cap",
+      "defeated": "{name} foi derrotado!",
+      "dazed": "Dazed", "dazedDesc": "Fica Dazed até o fim do próximo turno.",
+      "brokenWeapon": "Arma Quebrada", "brokenWeaponDesc": "Destrua uma das suas armas (Limited/Consumable só se ainda tiver cargas). Sem arma: vira Item de Suporte Quebrado; sem nenhum dos dois: Staggered.",
+      "brokenSupport": "Item de Suporte Quebrado", "brokenSupportDesc": "Destrua um dos seus itens de suporte (Limited/Consumable só se ainda tiver cargas). Sem item: vira Arma Quebrada; sem nenhum dos dois: Staggered.",
+      "staggered": "Staggered", "staggeredDesc": "Fica Slowed e Stunned até o fim do próximo turno.",
+      "brokenTech": "Técnica Quebrada", "brokenTechDesc": "Destrua uma das suas técnicas. Sem técnica possível: vira Mana Perdida; se também não der: Exposed.",
+      "lostMana": "Mana Perdida", "lostManaDesc": "−1 MP atual e máximo até ser restaurado num Short Rest (já aplicado na ficha).",
+      "exposed": "Exposed", "exposedDesc": "Fica Vulnerable e Weakened até o fim do próximo turno."
+    },
+    "Chat": {
+      "apply": "Aplicar", "heal": "Curar", "damage": "Dano", "piercing": "Piercing", "reliable": "Reliable",
+      "rollDamage": "Rolar dano", "rollCritDamage": "Dano crítico",
+      "tookHarm": "{name} sofreu {amount} {type}.",
+      "spentRecovery": "{name} gastou uma Recovery e recuperou todo o HP.",
+      "shortRest": "{name} fez um Short Rest: Stress zerado, MP cheio, recarregou e limpou condições.",
+      "longRest": "{name} fez um Long Rest: tudo restaurado.",
+      "surge": "{name} usa Surge e sofre {amount} de Stress.",
+      "defend": "{name} usa Defend e ganha {amount} de Focus. Ataques contra ele têm +1 Difficulty até o próximo turno."
+    },
+    "Refresh": {
+      "first": "Primeira escolha", "second": "Segunda escolha",
+      "hp": "Gastar 1 Recovery e recuperar todo o HP", "stress": "Zerar Stress", "mp": "Recuperar todo o MP",
+      "reload": "Recarregar armas/habilidades Reloading", "discord": "Zerar Discord", "condition": "Remover uma condição (manual)"
+    },
+    "Rest": {
+      "short": "Short Rest", "long": "Long Rest",
+      "longConfirm": "Restaurar HP, MP, Recoveries, Wounds, Overstress, Surge, Limit Break e reparar todo o equipamento?"
+    },
+    "Job": {
+      "baseAttributes": "Atributos base", "traits": "Traits do Job", "limitBreak": "Limit Break",
+      "weaponSlots": "Slots de arma", "supportSlots": "Slots de suporte"
+    },
+    "Class": {
+      "abilities": "Habilidades por rank",
+      "abilitiesHint": "Liste aqui as habilidades de cada rank. Você pode colar links (@UUID) para os itens."
+    },
+    "Ancestry": {
+      "traits": "Traits de ancestralidade",
+      "traitsHint": "Antes de cada quest o beacon equipa um destes traits. Crie o trait escolhido como Habilidade (categoria Trait) na ficha."
+    },
+    "Build": {
+      "classRanks": "Ranks de classe", "talentRanks": "Ranks de talento",
+      "dropAncestry": "Arraste uma Ancestralidade para cá.",
+      "bonuses": "Bônus manuais",
+      "bonusesHint": "Ajustes vindos de talentos, traits e efeitos. Somados aos valores calculados do Job + atributos + Grit. Resistências/imunidades: tipos separados por vírgula (physical, force, astral, lunar, discord, stress, all)."
+    },
+    "Narrative": {
+      "title": "Título", "gold": "Gold", "residuum": "Residuum",
+      "backgroundSkills": "Background Skills", "backgroundSkill": "Background Skill", "newSkill": "Nova Background Skill",
+      "skillCheck": "Skill Check", "invokeTitle": "Invocar título (+2)",
+      "skillHint": "Skill check: 1d20 + Accuracy igual ao rank da background skill (+2 ao invocar o título). 9 ou menos: erro; 10–19: acerto; 20+: crítico.",
+      "biography": "Biografia", "notes": "Anotações"
+    },
+    "NPC": {
+      "tier": "Tier", "role": "Papel", "type": "Tipo de NPC", "templates": "Templates", "turns": "Turnos/rodada",
+      "recharge": "Recharge",
+      "tierHint": "Os valores acima são do tier atual. Ao trocar o tier, a ficha usa os valores daquele tier. Valores com barra nas habilidades (ex.: +2/4/6, 4/6/8) são resolvidos pelo tier."
+    },
+    "Item": {
+      "category": "Categoria", "action": "Ação / Ativação", "attack": "Ataque", "defense": "Defesa alvo",
+      "size": "Tamanho", "weaponType": "Tipo de arma", "tags": "Tags", "range": "Range / Reach / Área",
+      "damage": "Dano", "damageType": "Tipo de dano", "attackBonus": "Bônus de ataque (NPC)",
+      "mana": "Custo de MP", "stressful": "Stressful", "usesType": "Tipo de uso", "uses": "Usos",
+      "rank": "Rank", "source": "Origem", "rarity": "Raridade", "npcFeature": "Feature de NPC",
+      "free": "Equipado de graça", "reloading": "Reloading",
+      "tagsHint": "Tags reconhecidas automaticamente: Accurate, Inaccurate, Aetheric (ataca A-Def), Piercing, Reliable X, Mana X, Focus X, Stressful X, Slow. Valores de NPC podem usar o formato T1/T2/T3 (ex.: 4/6/8)."
+    },
+    "Supply": { "quantity": "Quantidade", "cost": "Custo (Gold)" },
+    "Template": { "kind": "Tipo de template" },
+    "Sheet": {
+      "beacon": "Ficha de Beacon", "npc": "Ficha de NPC", "item": "Ficha de item BEACON",
+      "name": "Nome", "description": "Descrição", "noJob": "Sem Job equipado", "noAncestry": "Sem ancestralidade",
+      "newItem": "Novo(a) {type}", "use": "Usar / rolar", "edit": "Editar", "delete": "Excluir",
+      "equipped": "Equipado", "destroyed": "Destruído", "loaded": "Carregado", "charged": "Carregado (Recharge)",
+      "spendRecovery": "Gastar Recovery (HP cheio)", "woundRoll": "Rolar tabela de Wound",
+      "overstressRoll": "Rolar tabela de Overstress", "discordCheck": "Teste de Magic contra Discord"
+    },
+    "Settings": {
+      "resetPhases": "Beacons escolhem a fase a cada rodada",
+      "resetPhasesHint": "No início de cada rodada a fase dos beacons no combate é limpa, para que cada jogador escolha novamente em qual fase vai agir."
+    },
+    "Import": {
+      "button": "Importar BEACON", "title": "Importar conteúdo BEACON (JSON)", "import": "Importar",
+      "folder": "Pasta de destino", "gmOnly": "Somente o GM pode importar.",
+      "invalid": "JSON inválido", "done": "Importação concluída: {items} itens e {actors} atores.",
+      "hint": "Cole um array JSON de documentos (Item ou Actor) no formato do sistema. Veja o README para o esquema de cada tipo."
+    },
+    "Warn": {
+      "badFormula": "Fórmula de dano inválida: {formula}", "destroyed": "{name} está destruído.",
+      "unloaded": "{name} precisa ser recarregado.", "notCharged": "{name} ainda não recarregou.",
+      "noUses": "{name} não tem mais usos.", "silenced": "Personagens Silenced não podem usar spells.",
+      "noMP": "MP insuficiente (custo {cost}).", "noFocus": "Focus insuficiente (custo {cost}).",
+      "noRecoveries": "Sem Recoveries disponíveis.", "noDiscord": "Sem Discord para testar.",
+      "nothingToRecharge": "Nenhuma habilidade aguardando recharge.", "noJob": "Nenhum Job equipado.",
+      "limitBreakUsed": "O Limit Break já foi usado nesta quest.", "itemMissing": "Item não encontrado.",
+      "selectToken": "Selecione ou mire em um token.", "notOwner": "Você não tem permissão sobre {name}.",
+      "macroOwned": "Só é possível criar macros de itens que pertencem a um ator."
+    }
+  }
+}

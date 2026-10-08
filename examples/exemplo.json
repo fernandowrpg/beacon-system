@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Lâmina de Treino",
+    "type": "ability",
+    "img": "icons/weapons/swords/sword-guard-steel.webp",
+    "system": {
+      "category": "weapon", "action": "fight", "attack": "melee", "size": "main", "weaponType": "blade",
+      "tags": "Reliable 1", "range": "Reach 1", "damage": "1d6", "damageType": "physical", "source": "exemplo",
+      "description": "<p>Exemplo de arma criada para testar o sistema.</p>"
+    }
+  },
+  {
+    "name": "Faísca Arcana",
+    "type": "ability",
+    "img": "icons/magic/lightning/bolt-strike-blue.webp",
+    "system": {
+      "category": "spell", "action": "volley", "attack": "ranged", "memory": 1,
+      "tags": "Aetheric, Mana 1", "range": "Range = Scope", "damage": "1d3+1", "damageType": "astral", "source": "exemplo",
+      "description": "<p>Exemplo de spell: ataque Aetheric (contra A-Def) que custa 1 MP.</p>"
+    }
+  },
+  {
+    "name": "Job de Exemplo",
+    "type": "job",
+    "system": {
+      "role": "striker", "scope": 8, "saveTarget": 10, "hp": 8, "recoveries": 3, "dodge": 8, "speed": 4,
+      "stressCap": 6, "memory": 6, "adef": 8, "mp": 3, "weaponSlots": "Main, Light", "supportSlots": "Main",
+      "traits": "<p>Escreva aqui os traits do job.</p>",
+      "limitBreak": { "name": "Golpe Final", "range": "Reach 1", "description": "<p>Escreva aqui o efeito do limit break.</p>" }
+    }
+  },
+  {
+    "name": "Talento de Exemplo",
+    "type": "talent",
+    "system": {
+      "rank": 1,
+      "rank1": { "name": "Primeiro passo", "description": "<p>Efeito do rank 1.</p>" },
+      "rank2": { "name": "Segundo passo", "description": "<p>Efeito do rank 2.</p>" },
+      "rank3": { "name": "Terceiro passo", "description": "<p>Efeito do rank 3.</p>" }
+    }
+  },
+  {
+    "name": "Ancestralidade de Exemplo",
+    "type": "ancestry",
+    "system": { "size": "1", "traits": "<p>Liste os quatro traits disponíveis.</p>" }
+  },
+  {
+    "name": "Capanga de Exemplo",
+    "type": "npc",
+    "system": {
+      "tier": 1, "role": "striker", "npcType": "Exemplo", "size": "1", "turns": 1,
+      "tiers": {
+        "1": { "saveTarget": 12, "armor": 1, "scope": 5, "initiative": 5, "hp": 12, "stressCap": 6, "dodge": 10, "adef": 8, "speed": 4, "mp": 2, "bulk": 1, "agility": 1, "mind": 0, "magic": 0 },
+        "2": { "saveTarget": 15, "armor": 1, "scope": 5, "initiative": 5, "hp": 15, "stressCap": 6, "dodge": 11, "adef": 9, "speed": 4, "mp": 2, "bulk": 2, "agility": 2, "mind": 0, "magic": 0 },
+        "3": { "saveTarget": 18, "armor": 2, "scope": 5, "initiative": 5, "hp": 18, "stressCap": 6, "dodge": 12, "adef": 10, "speed": 4, "mp": 2, "bulk": 3, "agility": 3, "mind": 0, "magic": 0 }
+      },
+      "hp": { "value": 12, "max": 12 }
+    },
+    "items": [
+      {
+        "name": "Clava",
+        "type": "ability",
+        "system": {
+          "category": "weapon", "action": "fight", "attack": "melee", "npcFeature": "base",
+          "attackBonus": "+2/4/6", "range": "Reach 1", "damage": "4/6/8", "damageType": "physical", "equipped": true
+        }
+      }
+    ]
+  }
+]

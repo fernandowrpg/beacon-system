@@ -1,0 +1,8 @@
+<div class="form-grid">
+  <label>{{localize "BEACON.Attr.size"}} <select name="system.size">{{selectOptions config.characterSizes selected=system.size}}</select></label>
+</div>
+<h3>{{localize "BEACON.Ancestry.traits"}}</h3>
+<p class="hint">{{localize "BEACON.Ancestry.traitsHint"}}</p>
+<prose-mirror name="system.traits" value="{{system.traits}}" toggled>{{{enriched.traits}}}</prose-mirror>
+<h3>{{localize "BEACON.Sheet.description"}}</h3>
+<prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>

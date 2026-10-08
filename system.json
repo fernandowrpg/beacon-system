@@ -1,0 +1,47 @@
+{
+  "id": "beacon",
+  "title": "BEACON",
+  "description": "Sistema não oficial para o RPG tático de fantasia BEACON (inspirado em Lancer e Final Fantasy). Fichas de beacon e NPC, fases de combate, Accuracy/Difficulty, Wounds/Overstress, Surge e cartões de ataque e dano.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    { "name": "Fernando" }
+  ],
+  "esmodules": ["beacon.mjs"],
+  "styles": ["styles/beacon.css"],
+  "languages": [
+    { "lang": "pt-BR", "name": "Português (Brasil)", "path": "lang/pt-BR.json" },
+    { "lang": "en", "name": "English", "path": "lang/en.json" }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "beacon": { "htmlFields": ["biography", "notes"] },
+      "npc": { "htmlFields": ["description"] }
+    },
+    "Item": {
+      "ability": { "htmlFields": ["description"] },
+      "job": { "htmlFields": ["description", "traits", "limitBreak.description"] },
+      "class": { "htmlFields": ["description", "abilities"] },
+      "talent": { "htmlFields": ["description", "rank1.description", "rank2.description", "rank3.description"] },
+      "ancestry": { "htmlFields": ["description", "traits"] },
+      "supply": { "htmlFields": ["description"] },
+      "template": { "htmlFields": ["description"] }
+    }
+  },
+  "grid": {
+    "distance": 1,
+    "units": "",
+    "type": 1
+  },
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "stress",
+  "initiative": "0",
+  "url": "https://github.com/fernandowrpg/beacon-system",
+  "manifest": "https://github.com/fernandowrpg/beacon-system/releases/latest/download/system.json",
+  "download": "https://github.com/fernandowrpg/beacon-system/releases/download/v0.1.0/beacon.zip",
+  "bugs": "https://github.com/fernandowrpg/beacon-system/issues",
+  "readme": "https://github.com/fernandowrpg/beacon-system/blob/main/README.md"
+}

@@ -1,0 +1,7 @@
+<div class="form-grid">
+  <label>{{localize "BEACON.Supply.quantity"}} <input type="number" name="system.quantity" value="{{system.quantity}}" min="0"></label>
+  <label>{{localize "BEACON.Supply.cost"}} <input type="number" name="system.cost" value="{{system.cost}}" min="0"></label>
+  <label class="check"><input type="checkbox" name="system.equipped" {{checked system.equipped}}> {{localize "BEACON.Sheet.equipped"}}</label>
+</div>
+<h3>{{localize "BEACON.Sheet.description"}}</h3>
+<prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>

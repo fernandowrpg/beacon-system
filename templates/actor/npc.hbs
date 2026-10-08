@@ -1,0 +1,110 @@
+<div class="npc-sheet">
+  <header class="beacon-header npc">
+    <div class="identity">
+      <img class="portrait" src="{{actor.img}}" data-edit="img" data-action="editImage" alt="{{actor.name}}">
+      <div class="identity-fields">
+        <input class="actor-name" type="text" name="name" value="{{actor.name}}">
+        <div class="identity-line">
+          <label>{{localize "BEACON.NPC.tier"}} <select name="system.tier">{{selectOptions tierOptions selected=system.tier}}</select></label>
+          <label>{{localize "BEACON.NPC.role"}} <select name="system.role">{{selectOptions config.roles selected=system.role localize=true}}</select></label>
+          <label>{{localize "BEACON.Attr.size"}} <select name="system.size">{{selectOptions config.characterSizes selected=system.size}}</select></label>
+        </div>
+        <div class="identity-line">
+          <label>{{localize "BEACON.NPC.type"}} <input type="text" name="system.npcType" value="{{system.npcType}}"></label>
+          <label>{{localize "BEACON.NPC.templates"}} <input type="text" name="system.templates" value="{{system.templates}}"></label>
+          <label>{{localize "BEACON.NPC.turns"}} <input type="number" name="system.turns" value="{{system.turns}}" min="1" max="4"></label>
+        </div>
+      </div>
+    </div>
+    <div class="resources">
+      <div class="resource hp">
+        <label>{{localize "BEACON.Attr.hp"}}</label>
+        <div class="bar"><span style="width: {{beaconPct system.hp.value system.hp.max}}%"></span></div>
+        <div class="values"><input type="number" name="system.hp.value" value="{{system.hp.value}}"> / {{system.hp.max}}</div>
+        <div class="sub">{{localize "BEACON.Attr.tempHp"}} <input type="number" name="system.tempHp" value="{{system.tempHp}}"></div>
+      </div>
+      <div class="resource stress">
+        <label>{{localize "BEACON.Attr.stress"}}</label>
+        <div class="bar"><span style="width: {{beaconPct system.stress.value system.stress.max}}%"></span></div>
+        <div class="values"><input type="number" name="system.stress.value" value="{{system.stress.value}}"> / {{system.stress.max}}</div>
+      </div>
+      <div class="resource mp">
+        <label>{{localize "BEACON.Attr.mp"}}</label>
+        <div class="bar"><span style="width: {{beaconPct system.mp.value system.mp.max}}%"></span></div>
+        <div class="values"><input type="number" name="system.mp.value" value="{{system.mp.value}}"> / {{system.mp.max}}</div>
+        <div class="sub">{{localize "BEACON.Attr.focus"}} <input type="number" name="system.focus" value="{{system.focus}}"></div>
+      </div>
+      <div class="resource counters">
+        <div class="counter">{{localize "BEACON.Harm.wounds"}} <input type="number" name="system.wounds.value" value="{{system.wounds.value}}"> / <input type="number" name="system.wounds.max" value="{{system.wounds.max}}"></div>
+        <div class="counter">{{localize "BEACON.Harm.overstresses"}} <input type="number" name="system.overstress.value" value="{{system.overstress.value}}"> / <input type="number" name="system.overstress.max" value="{{system.overstress.max}}"></div>
+        <div class="counter"><a data-action="discord"><i class="fa-solid fa-skull-crossbones"></i></a> {{localize "BEACON.Damage.discord"}} <input type="number" name="system.discord" value="{{system.discord}}"></div>
+      </div>
+    </div>
+    {{> "systems/beacon/templates/actor/partials/status-bar.hbs"}}
+  </header>
+
+  <div class="npc-body">
+    <div class="npc-stats">
+      {{#each scoreList as |s|}}
+      <div class="score">
+        <label>{{s.label}}</label>
+        <input type="number" name="{{@root.tierPath}}.{{s.key}}" value="{{s.value}}">
+        <div class="score-buttons">
+          <a data-action="rollAbility" data-ability="{{s.key}}"><i class="fa-solid fa-dice-d20"></i> {{localize "BEACON.Roll.checkShort"}}</a>
+          <a data-action="rollSave" data-ability="{{s.key}}"><i class="fa-solid fa-shield-heart"></i> {{localize "BEACON.Roll.saveShort"}}</a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="npc-attributes">
+      {{#each statFields as |f|}}
+      <label>{{f.label}} <input type="number" name="{{@root.tierPath}}.{{f.key}}" value="{{f.value}}"></label>
+      {{/each}}
+      <label>{{localize "BEACON.Attr.resistances"}} <input type="text" name="system.resistances" value="{{system.resistances}}"></label>
+      <label>{{localize "BEACON.Attr.immunities"}} <input type="text" name="system.immunities" value="{{system.immunities}}"></label>
+    </div>
+    <p class="hint">{{localize "BEACON.NPC.tierHint"}}</p>
+
+    <div class="combat-actions">
+      <button type="button" data-action="defend"><i class="fa-solid fa-shield-halved"></i> {{localize "BEACON.Action.defend"}}</button>
+      <button type="button" data-action="refresh"><i class="fa-solid fa-arrows-rotate"></i> {{localize "BEACON.Action.refresh"}}</button>
+      <button type="button" data-action="recharge"><i class="fa-solid fa-battery-half"></i> {{localize "BEACON.NPC.recharge"}}</button>
+      <button type="button" data-action="shortRest"><i class="fa-solid fa-mug-hot"></i> {{localize "BEACON.Rest.short"}}</button>
+      <button type="button" data-action="longRest"><i class="fa-solid fa-bed"></i> {{localize "BEACON.Rest.long"}}</button>
+    </div>
+
+    <div class="ability-group">
+      <h3>{{localize "BEACON.NPCFeature.base"}}
+        <span class="adders">
+          {{#each config.abilityCategories as |label key|}}<a class="add" data-action="createItem" data-type="ability" data-category="{{key}}" data-tooltip="{{label}}"><i class="fa-solid fa-plus"></i></a>{{/each}}
+        </span>
+      </h3>
+      <ol class="ability-list">
+        {{#each baseFeatures}}{{> "systems/beacon/templates/actor/partials/ability-row.hbs"}}{{/each}}
+      </ol>
+    </div>
+    <div class="ability-group">
+      <h3>{{localize "BEACON.NPCFeature.extra"}}</h3>
+      <ol class="ability-list">
+        {{#each extraFeatures}}{{> "systems/beacon/templates/actor/partials/ability-row.hbs"}}{{/each}}
+      </ol>
+    </div>
+    {{#if templates.length}}
+    <div class="ability-group">
+      <h3>{{localize "TYPES.Item.template"}}</h3>
+      <ol class="simple-list">
+        {{#each templates as |tp|}}
+        <li class="item" data-item-id="{{tp.id}}">
+          <img src="{{tp.img}}" alt=""><a data-action="chatItem" class="name">{{tp.name}}</a>
+          <div class="row-controls"><a data-action="editItem"><i class="fa-solid fa-pen"></i></a><a data-action="deleteItem"><i class="fa-solid fa-trash"></i></a></div>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+    {{/if}}
+    <div class="ability-group">
+      <h3>{{localize "BEACON.Sheet.description"}}</h3>
+      <prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="form-grid">
+  <label>{{localize "BEACON.NPC.role"}} <select name="system.role">{{selectOptions config.roles selected=system.role localize=true}}</select></label>
+  <label>{{localize "TYPES.Item.class"}} <input type="text" name="system.className" value="{{system.className}}"></label>
+  <label class="check"><input type="checkbox" name="system.equipped" {{checked system.equipped}}> {{localize "BEACON.Sheet.equipped"}}</label>
+</div>
+<h3>{{localize "BEACON.Job.baseAttributes"}}</h3>
+<div class="form-grid attrs">
+  <label>{{localize "BEACON.Attr.scope"}} <input type="number" name="system.scope" value="{{system.scope}}"></label>
+  <label>{{localize "BEACON.Attr.saveTarget"}} <input type="number" name="system.saveTarget" value="{{system.saveTarget}}"></label>
+  <label>{{localize "BEACON.Attr.hp"}} <input type="number" name="system.hp" value="{{system.hp}}"></label>
+  <label>{{localize "BEACON.Attr.recoveries"}} <input type="number" name="system.recoveries" value="{{system.recoveries}}"></label>
+  <label>{{localize "BEACON.Attr.dodge"}} <input type="number" name="system.dodge" value="{{system.dodge}}"></label>
+  <label>{{localize "BEACON.Attr.speed"}} <input type="number" name="system.speed" value="{{system.speed}}"></label>
+  <label>{{localize "BEACON.Attr.stressCap"}} <input type="number" name="system.stressCap" value="{{system.stressCap}}"></label>
+  <label>{{localize "BEACON.Attr.memory"}} <input type="number" name="system.memory" value="{{system.memory}}"></label>
+  <label>{{localize "BEACON.Attr.adef"}} <input type="number" name="system.adef" value="{{system.adef}}"></label>
+  <label>{{localize "BEACON.Attr.mp"}} <input type="number" name="system.mp" value="{{system.mp}}"></label>
+</div>
+<div class="form-grid wide">
+  <label>{{localize "BEACON.Job.weaponSlots"}} <input type="text" name="system.weaponSlots" value="{{system.weaponSlots}}"></label>
+  <label>{{localize "BEACON.Job.supportSlots"}} <input type="text" name="system.supportSlots" value="{{system.supportSlots}}"></label>
+</div>
+<h3>{{localize "BEACON.Job.traits"}}</h3>
+<prose-mirror name="system.traits" value="{{system.traits}}" toggled>{{{enriched.traits}}}</prose-mirror>
+<h3>{{localize "BEACON.Job.limitBreak"}}</h3>
+<div class="form-grid wide">
+  <label>{{localize "BEACON.Sheet.name"}} <input type="text" name="system.limitBreak.name" value="{{system.limitBreak.name}}"></label>
+  <label>{{localize "BEACON.Item.range"}} <input type="text" name="system.limitBreak.range" value="{{system.limitBreak.range}}"></label>
+</div>
+<prose-mirror name="system.limitBreak.description" value="{{system.limitBreak.description}}" toggled>{{{enriched.limitBreak}}}</prose-mirror>
+<h3>{{localize "BEACON.Sheet.description"}}</h3>
+<prose-mirror name="system.description" value="{{system.description}}" toggled>{{{enriched.description}}}</prose-mirror>

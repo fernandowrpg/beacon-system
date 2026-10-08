@@ -1,0 +1,68 @@
+<section class="tab build {{tabs.build.cssClass}}" data-group="primary" data-tab="build">
+  <div class="loadout-summary">
+    <div class="{{#if classOver}}warn{{/if}}"><strong>{{localize "BEACON.Build.classRanks"}}:</strong> {{system.classRanks}}/{{system.level}}</div>
+    <div><strong>{{localize "BEACON.Build.talentRanks"}}:</strong> {{system.talentRanks}}/{{talentMax}}</div>
+  </div>
+
+  <div class="ability-group">
+    <h3>{{localize "TYPES.Item.ancestry"}}</h3>
+    {{#if ancestry}}
+    <ol class="simple-list">
+      <li class="item" data-item-id="{{ancestry.id}}">
+        <img src="{{ancestry.img}}" alt=""><a data-action="editItem" class="name">{{ancestry.name}}</a>
+        <span class="muted">{{localize "BEACON.Attr.size"}} {{sizeLabel}}</span>
+        <div class="row-controls"><a data-action="deleteItem"><i class="fa-solid fa-trash"></i></a></div>
+      </li>
+    </ol>
+    {{else}}
+    <p class="hint">{{localize "BEACON.Build.dropAncestry"}}</p>
+    {{/if}}
+  </div>
+
+  <div class="ability-group">
+    <h3>{{localize "TYPES.Item.class"}} <a class="add" data-action="createItem" data-type="class"><i class="fa-solid fa-plus"></i></a></h3>
+    <ol class="simple-list">
+      {{#each classes as |c|}}
+      <li class="item" data-item-id="{{c.id}}">
+        <img src="{{c.img}}" alt=""><a data-action="editItem" class="name">{{c.name}}</a>
+        <span class="rank-pips">{{#each (beaconRange 1 3)}}<i class="fa-{{#if (beaconLte this c.system.rank)}}solid{{else}}regular{{/if}} fa-circle"></i>{{/each}}</span>
+        <div class="row-controls"><a data-action="deleteItem"><i class="fa-solid fa-trash"></i></a></div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+
+  <div class="ability-group">
+    <h3>{{localize "TYPES.Item.talent"}} <a class="add" data-action="createItem" data-type="talent"><i class="fa-solid fa-plus"></i></a></h3>
+    <ol class="simple-list">
+      {{#each talents as |tl|}}
+      <li class="item talent" data-item-id="{{tl.id}}">
+        <img src="{{tl.img}}" alt=""><a data-action="chatItem" class="name">{{tl.name}}</a>
+        <span class="talent-ranks">{{#each tl.ranks as |r|}}<span class="tag {{#if r.active}}on{{else}}off{{/if}}">{{r.rank}}. {{r.name}}</span>{{/each}}</span>
+        <div class="row-controls">
+          <a data-action="editItem"><i class="fa-solid fa-pen"></i></a>
+          <a data-action="deleteItem"><i class="fa-solid fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+
+  <div class="ability-group bonuses">
+    <h3>{{localize "BEACON.Build.bonuses"}}</h3>
+    <p class="hint">{{localize "BEACON.Build.bonusesHint"}}</p>
+    <div class="bonus-grid">
+      {{#each source.bonuses as |v k|}}
+      <label>{{localize (concat "BEACON.Attr." k)}} <input type="number" name="system.bonuses.{{k}}" value="{{v}}"></label>
+      {{/each}}
+    </div>
+    <div class="bonus-grid wide">
+      <label>{{localize "BEACON.Attr.resistances"}} <input type="text" name="system.resistances" value="{{system.resistances}}" placeholder="physical, stress"></label>
+      <label>{{localize "BEACON.Attr.immunities"}} <input type="text" name="system.immunities" value="{{system.immunities}}"></label>
+      <label>{{localize "BEACON.Attr.vulnerabilities"}} <input type="text" name="system.vulnerabilities" value="{{system.vulnerabilities}}"></label>
+      <label>{{localize "BEACON.Harm.woundCap"}} <input type="number" name="system.wounds.max" value="{{system.wounds.max}}"></label>
+      <label>{{localize "BEACON.Harm.overstressCap"}} <input type="number" name="system.overstress.max" value="{{system.overstress.max}}"></label>
+      <label>{{localize "BEACON.Combat.surgeLevel"}} <input type="number" name="system.surge" value="{{system.surge}}" min="0" max="3"></label>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,48 @@
+<header class="beacon-header">
+  <div class="identity">
+    <img class="portrait" src="{{actor.img}}" data-edit="img" data-action="editImage" alt="{{actor.name}}">
+    <div class="identity-fields">
+      <input class="actor-name" type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'BEACON.Sheet.name'}}">
+      <input class="actor-title" type="text" name="system.title" value="{{system.title}}" placeholder="{{localize 'BEACON.Narrative.title'}}">
+      <div class="identity-line">
+        <label>{{localize "BEACON.Attr.level"}} <input type="number" name="system.level" value="{{system.level}}" min="1" max="12"></label>
+        <span class="pill">{{localize "BEACON.Attr.grit"}} {{beaconSigned system.grit}}</span>
+        <span class="pill">{{localize "BEACON.Attr.size"}} {{sizeLabel}}</span>
+        <span class="pill {{#if job}}{{else}}warn{{/if}}">{{#if job}}{{job.name}}{{else}}{{localize "BEACON.Sheet.noJob"}}{{/if}}</span>
+        <span class="pill">{{#if ancestry}}{{ancestry.name}}{{else}}{{localize "BEACON.Sheet.noAncestry"}}{{/if}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="resources">
+    <div class="resource hp">
+      <label>{{localize "BEACON.Attr.hp"}}</label>
+      <div class="bar"><span style="width: {{beaconPct system.hp.value system.hp.max}}%"></span></div>
+      <div class="values"><input type="number" name="system.hp.value" value="{{system.hp.value}}"> / {{system.hp.max}}</div>
+      <div class="sub">{{localize "BEACON.Attr.tempHp"}} <input type="number" name="system.tempHp" value="{{system.tempHp}}"></div>
+    </div>
+    <div class="resource stress">
+      <label>{{localize "BEACON.Attr.stress"}}</label>
+      <div class="bar"><span style="width: {{beaconPct system.stress.value system.stress.max}}%"></span></div>
+      <div class="values"><input type="number" name="system.stress.value" value="{{system.stress.value}}"> / {{system.stress.max}}</div>
+      <div class="sub">{{localize "BEACON.Attr.breaking"}} {{system.attributes.breaking}}</div>
+    </div>
+    <div class="resource mp">
+      <label>{{localize "BEACON.Attr.mp"}}</label>
+      <div class="bar"><span style="width: {{beaconPct system.mp.value system.mp.max}}%"></span></div>
+      <div class="values"><input type="number" name="system.mp.value" value="{{system.mp.value}}"> / {{system.mp.max}}</div>
+      <div class="sub">{{localize "BEACON.Attr.focus"}} <input type="number" name="system.focus" value="{{system.focus}}"></div>
+    </div>
+    <div class="resource counters">
+      <div class="counter"><a data-action="recovery" data-tooltip="BEACON.Sheet.spendRecovery"><i class="fa-solid fa-kit-medical"></i></a> {{localize "BEACON.Attr.recoveries"}} <input type="number" name="system.recoveries.value" value="{{system.recoveries.value}}"> / {{system.recoveries.max}}</div>
+      <div class="counter"><a data-action="harmRoll" data-kind="wound" data-tooltip="BEACON.Sheet.woundRoll"><i class="fa-solid fa-droplet"></i></a> {{localize "BEACON.Harm.wounds"}} <input type="number" name="system.wounds.value" value="{{system.wounds.value}}"> / {{system.wounds.max}}</div>
+      <div class="counter"><a data-action="harmRoll" data-kind="overstress" data-tooltip="BEACON.Sheet.overstressRoll"><i class="fa-solid fa-brain"></i></a> {{localize "BEACON.Harm.overstresses"}} <input type="number" name="system.overstress.value" value="{{system.overstress.value}}"> / {{system.overstress.max}}</div>
+      <div class="counter"><a data-action="discord" data-tooltip="BEACON.Sheet.discordCheck"><i class="fa-solid fa-skull-crossbones"></i></a> {{localize "BEACON.Damage.discord"}} <input type="number" name="system.discord" value="{{system.discord}}"></div>
+    </div>
+  </div>
+  {{> "systems/beacon/templates/actor/partials/status-bar.hbs"}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    {{#each tabs as |tab|}}
+    <a class="item {{tab.cssClass}}" data-action="tab" data-group="{{tab.group}}" data-tab="{{tab.id}}"><i class="{{tab.icon}}"></i> {{localize tab.label}}</a>
+    {{/each}}
+  </nav>
+</header>

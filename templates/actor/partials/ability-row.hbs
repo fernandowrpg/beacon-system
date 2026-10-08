@@ -1,0 +1,24 @@
+<li class="ability-row item {{#if unavailable}}unavailable{{/if}}" data-item-id="{{id}}" draggable="true">
+  <div class="row-main">
+    <a class="row-img" data-action="useItem" data-tooltip="BEACON.Sheet.use"><img src="{{img}}" alt=""><i class="fa-solid fa-dice-d20"></i></a>
+    <div class="row-name">
+      <a data-action="chatItem" class="name">{{name}}</a>
+      <div class="row-tags">
+        {{#if actionLabel}}<span class="tag action"><i class="{{phaseIcon}}"></i> {{actionLabel}}</span>{{/if}}
+        {{#if attackBonus}}<span class="tag atk">{{attackBonus}}</span>{{/if}}
+        {{#if range}}<span class="tag rng">{{range}}</span>{{/if}}
+        {{#if damage}}<span class="tag dmg dmg-{{system.damageType}}">{{damage}}</span>{{/if}}
+        {{#each tags}}<span class="tag">{{this}}</span>{{/each}}
+      </div>
+    </div>
+    <div class="row-controls">
+      {{#if hasUses}}<span class="uses">{{system.uses.value}}/{{system.uses.max}}</span>{{/if}}
+      {{#if system.reloading}}<a data-action="toggleItem" data-field="system.loaded" class="{{#if system.loaded}}on{{/if}}" data-tooltip="BEACON.Sheet.loaded"><i class="fa-solid fa-rotate"></i></a>{{/if}}
+      {{#if system.recharge}}<a data-action="toggleItem" data-field="system.charged" class="{{#if system.charged}}on{{/if}}" data-tooltip="BEACON.Sheet.charged"><i class="fa-solid fa-battery-full"></i></a>{{/if}}
+      <a data-action="toggleItem" data-field="system.equipped" class="{{#if system.equipped}}on{{/if}}" data-tooltip="BEACON.Sheet.equipped"><i class="fa-solid fa-shirt"></i></a>
+      <a data-action="toggleItem" data-field="system.destroyed" class="{{#if system.destroyed}}bad{{/if}}" data-tooltip="BEACON.Sheet.destroyed"><i class="fa-solid fa-heart-crack"></i></a>
+      <a data-action="editItem" data-tooltip="BEACON.Sheet.edit"><i class="fa-solid fa-pen"></i></a>
+      <a data-action="deleteItem" data-tooltip="BEACON.Sheet.delete"><i class="fa-solid fa-trash"></i></a>
+    </div>
+  </div>
+</li>

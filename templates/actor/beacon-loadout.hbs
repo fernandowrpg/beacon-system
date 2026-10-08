@@ -1,0 +1,50 @@
+<section class="tab loadout {{tabs.loadout.cssClass}}" data-group="primary" data-tab="loadout">
+  <div class="loadout-summary">
+    <div><strong>{{localize "BEACON.Job.weaponSlots"}}:</strong> {{#if job}}{{job.system.weaponSlots}}{{else}}—{{/if}}</div>
+    <div><strong>{{localize "BEACON.Job.supportSlots"}}:</strong> {{#if job}}{{job.system.supportSlots}}{{else}}—{{/if}}</div>
+    <div class="{{#if memoryOver}}warn{{/if}}"><strong>{{localize "BEACON.Attr.memory"}}:</strong> {{system.memoryUsed}}/{{system.attributes.memory}}</div>
+    <div><strong>{{localize "TYPES.Item.supply"}}:</strong> {{equippedSupplies}}/3</div>
+  </div>
+
+  <div class="ability-group">
+    <h3>{{localize "TYPES.Item.job"}} <a class="add" data-action="createItem" data-type="job"><i class="fa-solid fa-plus"></i></a></h3>
+    <ol class="simple-list">
+      {{#each jobs as |j|}}
+      <li class="item" data-item-id="{{j.id}}">
+        <img src="{{j.img}}" alt=""><a data-action="editItem" class="name">{{j.name}}</a>
+        <span class="muted">{{localize (lookup @root.config.roles j.system.role)}}</span>
+        <div class="row-controls">
+          <a data-action="toggleItem" data-field="system.equipped" class="{{#if j.system.equipped}}on{{/if}}" data-tooltip="BEACON.Sheet.equipped"><i class="fa-solid fa-shirt"></i></a>
+          <a data-action="deleteItem"><i class="fa-solid fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+
+  {{#each categories as |cat|}}
+  <div class="ability-group">
+    <h3>{{cat.label}} <a class="add" data-action="createItem" data-type="ability" data-category="{{cat.key}}"><i class="fa-solid fa-plus"></i></a></h3>
+    <ol class="ability-list">
+      {{#each cat.items}}{{> "systems/beacon/templates/actor/partials/ability-row.hbs"}}{{/each}}
+    </ol>
+  </div>
+  {{/each}}
+
+  <div class="ability-group">
+    <h3>{{localize "TYPES.Item.supply"}} <a class="add" data-action="createItem" data-type="supply"><i class="fa-solid fa-plus"></i></a></h3>
+    <ol class="simple-list">
+      {{#each supplies as |s|}}
+      <li class="item" data-item-id="{{s.id}}">
+        <img src="{{s.img}}" alt=""><a data-action="chatItem" class="name">{{s.name}}</a>
+        <span class="muted">×{{s.system.quantity}}</span>
+        <div class="row-controls">
+          <a data-action="toggleItem" data-field="system.equipped" class="{{#if s.system.equipped}}on{{/if}}" data-tooltip="BEACON.Sheet.equipped"><i class="fa-solid fa-shirt"></i></a>
+          <a data-action="editItem"><i class="fa-solid fa-pen"></i></a>
+          <a data-action="deleteItem"><i class="fa-solid fa-trash"></i></a>
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+  </div>
+</section>

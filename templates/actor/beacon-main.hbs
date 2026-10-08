@@ -1,0 +1,56 @@
+<section class="tab main {{tabs.main.cssClass}}" data-group="primary" data-tab="main">
+  <div class="main-grid">
+    <div class="scores">
+      {{#each scoreList as |s|}}
+      <div class="score">
+        <label>{{s.label}}</label>
+        <input type="number" name="system.abilities.{{s.key}}" value="{{s.source}}" min="0" max="6">
+        <div class="score-buttons">
+          <a data-action="rollAbility" data-ability="{{s.key}}" data-tooltip="BEACON.Roll.check"><i class="fa-solid fa-dice-d20"></i> {{localize "BEACON.Roll.checkShort"}}</a>
+          <a data-action="rollSave" data-ability="{{s.key}}" data-tooltip="BEACON.Roll.save"><i class="fa-solid fa-shield-heart"></i> {{localize "BEACON.Roll.saveShort"}}</a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="attributes">
+      <div class="attr"><label>{{localize "BEACON.Attr.dodge"}}</label><span>{{system.effectiveDodge}}</span></div>
+      <div class="attr"><label>{{localize "BEACON.Attr.adef"}}</label><span>{{system.effectiveAdef}}</span></div>
+      <div class="attr"><label>{{localize "BEACON.Attr.armor"}}</label><span>{{system.attributes.armor}}</span></div>
+      <div class="attr"><label>{{localize "BEACON.Attr.saveTarget"}}</label><span>{{system.attributes.saveTarget}}</span></div>
+      <div class="attr"><label>{{localize "BEACON.Attr.speed"}}</label><span>{{system.attributes.speed}}</span></div>
+      <div class="attr"><label>{{localize "BEACON.Attr.scope"}}</label><span>{{system.attributes.scope}}</span></div>
+      <div class="attr"><label>{{localize "BEACON.Attr.memory"}}</label><span class="{{#if memoryOver}}warn{{/if}}">{{system.memoryUsed}}/{{system.attributes.memory}}</span></div>
+      <div class="attr"><label>{{localize "BEACON.Attr.bloodied"}}</label><span>{{system.attributes.bloodied}}</span></div>
+    </div>
+  </div>
+
+  <div class="combat-actions">
+    <button type="button" data-action="defend"><i class="fa-solid fa-shield-halved"></i> {{localize "BEACON.Action.defend"}}</button>
+    <button type="button" data-action="refresh"><i class="fa-solid fa-arrows-rotate"></i> {{localize "BEACON.Action.refresh"}}</button>
+    <button type="button" data-action="surge" data-tooltip="{{surgeCost}} {{localize 'BEACON.Attr.stress'}}"><i class="fa-solid fa-bolt"></i> {{localize "BEACON.Combat.surge"}} ({{system.surge}})</button>
+    <button type="button" data-action="limitBreak" class="{{#if system.limitBreakUsed}}used{{/if}}"><i class="fa-solid fa-star"></i> {{localize "BEACON.Job.limitBreak"}}</button>
+    <button type="button" data-action="skillRoll"><i class="fa-solid fa-comments"></i> {{localize "BEACON.Narrative.skillCheck"}}</button>
+    <button type="button" data-action="shortRest"><i class="fa-solid fa-mug-hot"></i> {{localize "BEACON.Rest.short"}}</button>
+    <button type="button" data-action="longRest"><i class="fa-solid fa-bed"></i> {{localize "BEACON.Rest.long"}}</button>
+  </div>
+
+  {{#each equippedCategories as |cat|}}
+  {{#if cat.items.length}}
+  <div class="ability-group">
+    <h3>{{cat.label}}</h3>
+    <ol class="ability-list">
+      {{#each cat.items}}{{> "systems/beacon/templates/actor/partials/ability-row.hbs"}}{{/each}}
+    </ol>
+  </div>
+  {{/if}}
+  {{/each}}
+
+  {{#if job}}
+  <div class="ability-group job-traits">
+    <h3>{{localize "BEACON.Job.traits"}} — {{job.name}}</h3>
+    <div class="rich">{{{enriched.jobTraits}}}</div>
+    <h3><i class="fa-solid fa-star"></i> {{localize "BEACON.Job.limitBreak"}}: {{job.system.limitBreak.name}}</h3>
+    <div class="rich">{{{enriched.limitBreak}}}</div>
+  </div>
+  {{/if}}
+</section>
