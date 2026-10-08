@@ -1,4 +1,5 @@
 import { tiered } from "./config.mjs";
+import { abilityReach, sourceToken, tokenDistance } from "./canvas/distance.mjs";
 
 const { DialogV2 } = foundry.applications.api;
 
@@ -161,12 +162,17 @@ export async function rollAttack(actor, item, { skipDialog = false } = {}) {
   }
   const targets = Array.from(game.user.targets ?? []).filter(t => t.actor);
   const entries = targets.length ? targets : [null];
+  const origin = sourceToken(actor);
+  const maxRange = abilityReach(item, actor);
   const results = [];
   for (const token of entries) {
     const tActor = token?.actor ?? null;
     const def = tActor ? targetDefense(tActor, defense) : null;
+    const distance = token && origin ? tokenDistance(origin, token) : null;
+    const outOfRange = distance !== null && maxRange !== null && distance > maxRange;
+    const where = { distance, maxRange, outOfRange };
     if (sys.attack === "auto") {
-      results.push({ name: token?.name, outcome: "hit", def, roll: null, uuid: tActor?.uuid });
+      results.push({ name: token?.name, outcome: "hit", def, roll: null, uuid: tActor?.uuid, ...where });
       continue;
     }
     let acc = Number(opts.accuracy);
@@ -175,14 +181,14 @@ export async function rollAttack(actor, item, { skipDialog = false } = {}) {
     if (tActor?.statuses?.has("invisible")) {
       const inv = await new Roll("1d6").evaluate();
       if (inv.total <= 3) {
-        results.push({ name: token.name, outcome: "miss", def, roll: inv, invisible: true, uuid: tActor.uuid });
+        results.push({ name: token.name, outcome: "miss", def, roll: inv, invisible: true, uuid: tActor.uuid, ...where });
         continue;
       }
     }
     const formula = `1d20 ${signed(modifier + Number(opts.bonus || 0))}${accuracyFormula(acc, dif)}`;
     const roll = await new Roll(formula).evaluate();
     const outcome = roll.total >= 20 ? "crit" : (def === null ? "unknown" : roll.total >= def ? "hit" : "miss");
-    results.push({ name: token?.name, outcome, def, roll, uuid: tActor?.uuid });
+    results.push({ name: token?.name, outcome, def, roll, uuid: tActor?.uuid, ...where });
   }
   return { results, defense };
 }

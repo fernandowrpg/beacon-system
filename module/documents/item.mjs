@@ -121,9 +121,14 @@ export class BeaconItem extends Item {
         if (["hit", "crit", "unknown"].includes(r.outcome)) anyHit = true;
         if (r.outcome === "crit") anyCrit = true;
         const vs = r.def !== null && r.def !== undefined ? `<span class="vs">${defLabel} ${r.def}</span>` : "";
+        const dist = r.distance !== null && r.distance !== undefined
+          ? `<span class="vs dist">${r.distance}${r.maxRange !== null ? `/${r.maxRange}` : ""} ${t("BEACON.Ruler.spaces")}</span>`
+          : "";
+        const range = r.outOfRange ? `<div class="beacon-range-warn"><i class="fa-solid fa-triangle-exclamation"></i> ${t("BEACON.Ruler.outOfRange")}</div>` : "";
         const rollHTML = r.roll && !r.invisible ? await r.roll.render() : "";
         rows += `<div class="beacon-attack-row">
-          ${r.name ? `<div class="target-name">${foundry.utils.escapeHTML(r.name)} ${vs}</div>` : ""}
+          ${r.name ? `<div class="target-name">${foundry.utils.escapeHTML(r.name)} ${vs} ${dist}</div>` : ""}
+          ${range}
           ${rollHTML}
           <div class="beacon-outcome ${r.outcome}">${t(`BEACON.Outcome.${r.invisible ? "invisibleMiss" : r.outcome}`)}</div>
         </div>`;

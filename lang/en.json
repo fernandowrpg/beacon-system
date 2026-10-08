@@ -1,6 +1,9 @@
 {
   "TYPES": {
-    "Actor": { "beacon": "Beacon", "npc": "NPC" },
+    "Actor": {
+      "beacon": "Beacon",
+      "npc": "NPC"
+    },
     "Item": {
       "ability": "Ability",
       "job": "Job",
@@ -12,85 +15,224 @@
     }
   },
   "BEACON": {
-    "Ability": { "bulk": "Bulk", "agility": "Agility", "mind": "Mind", "magic": "Magic" },
-    "Attr": {
-      "level": "Level", "grit": "Grit", "size": "Size", "hp": "HP", "tempHp": "Temp HP", "stress": "Stress",
-      "stressCap": "Stress Cap", "breaking": "Breaking", "bloodied": "Bloodied", "mp": "MP", "focus": "Focus",
-      "recoveries": "Recoveries", "dodge": "Dodge", "adef": "A-Def", "armor": "Armor", "saveTarget": "Save Target",
-      "speed": "Speed", "scope": "Scope", "memory": "Memory", "initiative": "Initiative",
-      "resistances": "Resistances", "immunities": "Immunities", "vulnerabilities": "Vulnerabilities"
+    "Ability": {
+      "bulk": "Bulk",
+      "agility": "Agility",
+      "mind": "Mind",
+      "magic": "Magic"
     },
-    "Tab": { "main": "Combat", "loadout": "Loadout", "build": "Build", "narrative": "Narrative" },
+    "Attr": {
+      "level": "Level",
+      "grit": "Grit",
+      "size": "Size",
+      "hp": "HP",
+      "tempHp": "Temp HP",
+      "stress": "Stress",
+      "stressCap": "Stress Cap",
+      "breaking": "Breaking",
+      "bloodied": "Bloodied",
+      "mp": "MP",
+      "focus": "Focus",
+      "recoveries": "Recoveries",
+      "dodge": "Dodge",
+      "adef": "A-Def",
+      "armor": "Armor",
+      "saveTarget": "Save Target",
+      "speed": "Speed",
+      "scope": "Scope",
+      "memory": "Memory",
+      "initiative": "Initiative",
+      "resistances": "Resistances",
+      "immunities": "Immunities",
+      "vulnerabilities": "Vulnerabilities"
+    },
+    "Tab": {
+      "main": "Combat",
+      "loadout": "Loadout",
+      "build": "Build",
+      "narrative": "Narrative"
+    },
     "Phase": {
-      "bolster": "Bolster", "channel": "Channel", "skirmish": "Skirmish", "reposition": "Reposition",
-      "brawl": "Brawl", "release": "Release", "fullattack": "Full Attack", "delay": "Delay"
+      "bolster": "Bolster",
+      "channel": "Channel",
+      "skirmish": "Skirmish",
+      "reposition": "Reposition",
+      "brawl": "Brawl",
+      "release": "Release",
+      "fullattack": "Full Attack",
+      "delay": "Delay"
     },
     "Action": {
-      "passive": "Passive", "minor": "Minor Action", "free": "Free Action", "reaction": "Reaction", "special": "Special",
-      "bolster": "Phase Bolster", "defend": "Defend", "refresh": "Refresh", "channel": "Channel",
-      "skirmish": "Phase Skirmish", "mark": "Mark", "search": "Search", "volley": "Volley",
-      "reposition": "Phase Reposition", "hide": "Hide", "rush": "Rush",
-      "brawl": "Phase Brawl", "fight": "Fight", "grapple": "Grapple", "shove": "Shove",
-      "release": "Release", "fullattack": "Full Attack", "delay": "Delay", "ready": "Ready"
+      "passive": "Passive",
+      "minor": "Minor Action",
+      "free": "Free Action",
+      "reaction": "Reaction",
+      "special": "Special",
+      "bolster": "Phase Bolster",
+      "defend": "Defend",
+      "refresh": "Refresh",
+      "channel": "Channel",
+      "skirmish": "Phase Skirmish",
+      "mark": "Mark",
+      "search": "Search",
+      "volley": "Volley",
+      "reposition": "Phase Reposition",
+      "hide": "Hide",
+      "rush": "Rush",
+      "brawl": "Phase Brawl",
+      "fight": "Fight",
+      "grapple": "Grapple",
+      "shove": "Shove",
+      "release": "Release",
+      "fullattack": "Full Attack",
+      "delay": "Delay",
+      "ready": "Ready"
     },
     "Category": {
-      "weapon": "Weapons", "support": "Support Items", "spell": "Spells", "skill": "Skills",
-      "trait": "Traits", "limitbreak": "Limit Break"
+      "weapon": "Weapons",
+      "support": "Support Items",
+      "spell": "Spells",
+      "skill": "Skills",
+      "trait": "Traits",
+      "limitbreak": "Limit Break"
     },
-    "Attack": { "none": "No attack", "melee": "Melee", "ranged": "Ranged", "auto": "Auto-Hit" },
-    "Size": { "none": "—", "light": "Light", "main": "Main", "heavy": "Heavy" },
+    "Attack": {
+      "none": "No attack",
+      "melee": "Melee",
+      "ranged": "Ranged",
+      "auto": "Auto-Hit"
+    },
+    "Size": {
+      "none": "—",
+      "light": "Light",
+      "main": "Main",
+      "heavy": "Heavy"
+    },
     "WeaponType": {
-      "none": "—", "artifact": "Artifact", "blade": "Blade", "bow": "Bow", "club": "Club",
-      "longarm": "Longarm", "magitech": "Magitech"
+      "none": "—",
+      "artifact": "Artifact",
+      "blade": "Blade",
+      "bow": "Bow",
+      "club": "Club",
+      "longarm": "Longarm",
+      "magitech": "Magitech"
     },
     "Damage": {
-      "physical": "Physical", "force": "Force", "astral": "Astral", "lunar": "Lunar",
-      "discord": "Discord", "stress": "Stress"
+      "physical": "Physical",
+      "force": "Force",
+      "astral": "Astral",
+      "lunar": "Lunar",
+      "discord": "Discord",
+      "stress": "Stress"
     },
-    "Uses": { "none": "Unlimited", "limited": "Limited", "consumable": "Consumable" },
+    "Uses": {
+      "none": "Unlimited",
+      "limited": "Limited",
+      "consumable": "Consumable"
+    },
     "Role": {
-      "artillery": "Artillery", "controller": "Controller", "defender": "Defender",
-      "striker": "Striker", "support": "Support"
+      "artillery": "Artillery",
+      "controller": "Controller",
+      "defender": "Defender",
+      "striker": "Striker",
+      "support": "Support"
     },
-    "NPCFeature": { "none": "—", "base": "Base Features", "extra": "Extra Features" },
-    "TemplateKind": { "mechanical": "Mechanical", "thematic": "Thematic" },
+    "NPCFeature": {
+      "none": "—",
+      "base": "Base Features",
+      "extra": "Extra Features"
+    },
+    "TemplateKind": {
+      "mechanical": "Mechanical",
+      "thematic": "Thematic"
+    },
     "Condition": {
-      "defeated": "Defeated", "blinded": "Blinded", "dazed": "Dazed", "disarmed": "Disarmed",
-      "immobilized": "Immobilized", "marked": "Marked", "silenced": "Silenced", "slowed": "Slowed",
-      "stunned": "Stunned", "sundered": "Sundered", "vulnerable": "Vulnerable", "weakened": "Weakened",
-      "bloodied": "Bloodied", "breaking": "Breaking", "engaged": "Engaged", "flying": "Flying",
-      "grappled": "Grappled", "hidden": "Hidden", "invisible": "Invisible", "prone": "Prone",
-      "channeling": "Channeling", "resistant": "Resistant"
+      "defeated": "Defeated",
+      "blinded": "Blinded",
+      "dazed": "Dazed",
+      "disarmed": "Disarmed",
+      "immobilized": "Immobilized",
+      "marked": "Marked",
+      "silenced": "Silenced",
+      "slowed": "Slowed",
+      "stunned": "Stunned",
+      "sundered": "Sundered",
+      "vulnerable": "Vulnerable",
+      "weakened": "Weakened",
+      "bloodied": "Bloodied",
+      "breaking": "Breaking",
+      "engaged": "Engaged",
+      "flying": "Flying",
+      "grappled": "Grappled",
+      "hidden": "Hidden",
+      "invisible": "Invisible",
+      "prone": "Prone",
+      "channeling": "Channeling",
+      "resistant": "Resistant"
     },
     "Outcome": {
-      "hit": "Hit", "miss": "Miss", "crit": "Crit", "unknown": "Rolled (no target)",
-      "success": "Success", "failure": "Failure", "invisibleMiss": "Miss (Invisible: 1–3 on d6)"
+      "hit": "Hit",
+      "miss": "Miss",
+      "crit": "Crit",
+      "unknown": "Rolled (no target)",
+      "success": "Success",
+      "failure": "Failure",
+      "invisibleMiss": "Miss (Invisible: 1–3 on d6)"
     },
     "Roll": {
-      "accuracy": "Accuracy (+d6)", "difficulty": "Difficulty (−d6)", "bonus": "Static modifier",
-      "target": "Target (Save Target / DC)", "roll": "Roll", "vs": "vs", "accShort": "Acc",
-      "check": "Ability check (10+)", "save": "Save (vs Save Target)", "checkShort": "Check", "saveShort": "Save",
-      "checkTitle": "{ability} Check", "saveTitle": "{ability} Save", "attackTitle": "Attack: {name}"
+      "accuracy": "Accuracy (+d6)",
+      "difficulty": "Difficulty (−d6)",
+      "bonus": "Static modifier",
+      "target": "Target (Save Target / DC)",
+      "roll": "Roll",
+      "vs": "vs",
+      "accShort": "Acc",
+      "check": "Ability check (10+)",
+      "save": "Save (vs Save Target)",
+      "checkShort": "Check",
+      "saveShort": "Save",
+      "checkTitle": "{ability} Check",
+      "saveTitle": "{ability} Save",
+      "attackTitle": "Attack: {name}"
     },
     "Combat": {
-      "surge": "Surge", "surgeLevel": "Surge Level", "phase": "Phase",
-      "choosePhase": "{name}: choose a phase", "choosePhaseHint": "Which phase will this beacon act in this round?"
+      "surge": "Surge",
+      "surgeLevel": "Surge Level",
+      "phase": "Phase",
+      "choosePhase": "{name}: choose a phase",
+      "choosePhaseHint": "Which phase will this beacon act in this round?"
     },
     "Harm": {
-      "wound": "Wound", "wounds": "Wounds", "overstress": "Overstress", "overstresses": "Overstresses",
-      "woundCap": "Wound Cap", "overstressCap": "Overstress Cap",
+      "wound": "Wound",
+      "wounds": "Wounds",
+      "overstress": "Overstress",
+      "overstresses": "Overstresses",
+      "woundCap": "Wound Cap",
+      "overstressCap": "Overstress Cap",
       "defeated": "{name} is defeated!",
-      "dazed": "Dazed", "dazedDesc": "Dazed until the end of your next turn.",
-      "brokenWeapon": "Broken Weapon", "brokenWeaponDesc": "Destroy one of your weapons (Limited/Consumable only if it still has charges). No weapon: becomes Broken Support Item; neither: Staggered.",
-      "brokenSupport": "Broken Support Item", "brokenSupportDesc": "Destroy one of your support items (Limited/Consumable only if it still has charges). No item: becomes Broken Weapon; neither: Staggered.",
-      "staggered": "Staggered", "staggeredDesc": "Slowed and Stunned until the end of your next turn.",
-      "brokenTech": "Broken Tech", "brokenTechDesc": "Destroy one of your techniques. If impossible: becomes Lost Mana; if that is impossible too: Exposed.",
-      "lostMana": "Lost Mana", "lostManaDesc": "−1 current and maximum MP until restored during a Short Rest (already applied to the sheet).",
-      "exposed": "Exposed", "exposedDesc": "Vulnerable and Weakened until the end of your next turn."
+      "dazed": "Dazed",
+      "dazedDesc": "Dazed until the end of your next turn.",
+      "brokenWeapon": "Broken Weapon",
+      "brokenWeaponDesc": "Destroy one of your weapons (Limited/Consumable only if it still has charges). No weapon: becomes Broken Support Item; neither: Staggered.",
+      "brokenSupport": "Broken Support Item",
+      "brokenSupportDesc": "Destroy one of your support items (Limited/Consumable only if it still has charges). No item: becomes Broken Weapon; neither: Staggered.",
+      "staggered": "Staggered",
+      "staggeredDesc": "Slowed and Stunned until the end of your next turn.",
+      "brokenTech": "Broken Tech",
+      "brokenTechDesc": "Destroy one of your techniques. If impossible: becomes Lost Mana; if that is impossible too: Exposed.",
+      "lostMana": "Lost Mana",
+      "lostManaDesc": "−1 current and maximum MP until restored during a Short Rest (already applied to the sheet).",
+      "exposed": "Exposed",
+      "exposedDesc": "Vulnerable and Weakened until the end of your next turn."
     },
     "Chat": {
-      "apply": "Apply", "heal": "Heal", "damage": "Damage", "piercing": "Piercing", "reliable": "Reliable",
-      "rollDamage": "Roll damage", "rollCritDamage": "Crit damage",
+      "apply": "Apply",
+      "heal": "Heal",
+      "damage": "Damage",
+      "piercing": "Piercing",
+      "reliable": "Reliable",
+      "rollDamage": "Roll damage",
+      "rollCritDamage": "Crit damage",
       "tookHarm": "{name} took {amount} {type}.",
       "spentRecovery": "{name} spent a Recovery and regained all HP.",
       "shortRest": "{name} took a Short Rest: Stress cleared, MP full, reloaded and conditions cleared.",
@@ -99,17 +241,26 @@
       "defend": "{name} Defends and gains {amount} Focus. Attacks against them have +1 Difficulty until their next turn."
     },
     "Refresh": {
-      "first": "First choice", "second": "Second choice",
-      "hp": "Spend 1 Recovery to regain all HP", "stress": "Clear all Stress", "mp": "Regain all MP",
-      "reload": "Reload Reloading weapons/abilities", "discord": "Clear all Discord", "condition": "Clear a condition (manual)"
+      "first": "First choice",
+      "second": "Second choice",
+      "hp": "Spend 1 Recovery to regain all HP",
+      "stress": "Clear all Stress",
+      "mp": "Regain all MP",
+      "reload": "Reload Reloading weapons/abilities",
+      "discord": "Clear all Discord",
+      "condition": "Clear a condition (manual)"
     },
     "Rest": {
-      "short": "Short Rest", "long": "Long Rest",
+      "short": "Short Rest",
+      "long": "Long Rest",
       "longConfirm": "Restore HP, MP, Recoveries, Wounds, Overstress, Surge, Limit Break and repair all equipment?"
     },
     "Job": {
-      "baseAttributes": "Base attributes", "traits": "Job Traits", "limitBreak": "Limit Break",
-      "weaponSlots": "Weapon slots", "supportSlots": "Support slots"
+      "baseAttributes": "Base attributes",
+      "traits": "Job Traits",
+      "limitBreak": "Limit Break",
+      "weaponSlots": "Weapon slots",
+      "supportSlots": "Support slots"
     },
     "Class": {
       "abilities": "Abilities by rank",
@@ -120,62 +271,128 @@
       "traitsHint": "Before each quest the beacon equips one of these traits. Create the chosen trait as an Ability (Trait category) on the sheet."
     },
     "Build": {
-      "classRanks": "Class ranks", "talentRanks": "Talent ranks",
+      "classRanks": "Class ranks",
+      "talentRanks": "Talent ranks",
       "dropAncestry": "Drop an Ancestry here.",
       "bonuses": "Manual bonuses",
       "bonusesHint": "Adjustments from talents, traits and effects. Added to the values computed from Job + ability scores + Grit. Resistances/immunities: comma-separated types (physical, force, astral, lunar, discord, stress, all)."
     },
     "Narrative": {
-      "title": "Title", "gold": "Gold", "residuum": "Residuum",
-      "backgroundSkills": "Background Skills", "backgroundSkill": "Background Skill", "newSkill": "New Background Skill",
-      "skillCheck": "Skill Check", "invokeTitle": "Invoke title (+2)",
+      "title": "Title",
+      "gold": "Gold",
+      "residuum": "Residuum",
+      "backgroundSkills": "Background Skills",
+      "backgroundSkill": "Background Skill",
+      "newSkill": "New Background Skill",
+      "skillCheck": "Skill Check",
+      "invokeTitle": "Invoke title (+2)",
       "skillHint": "Skill check: 1d20 + Accuracy equal to the background skill rank (+2 when invoking your title). 9 or less: miss; 10–19: hit; 20+: crit.",
-      "biography": "Biography", "notes": "Notes"
+      "biography": "Biography",
+      "notes": "Notes"
     },
     "NPC": {
-      "tier": "Tier", "role": "Role", "type": "NPC Type", "templates": "Templates", "turns": "Turns/round",
+      "tier": "Tier",
+      "role": "Role",
+      "type": "NPC Type",
+      "templates": "Templates",
+      "turns": "Turns/round",
       "recharge": "Recharge",
       "tierHint": "The values above belong to the current tier. Changing the tier switches to that tier's values. Slash values on abilities (e.g. +2/4/6, 4/6/8) are resolved by tier."
     },
     "Item": {
-      "category": "Category", "action": "Action / Activation", "attack": "Attack", "defense": "Target defense",
-      "size": "Size", "weaponType": "Weapon type", "tags": "Tags", "range": "Range / Reach / Area",
-      "damage": "Damage", "damageType": "Damage type", "attackBonus": "Attack bonus (NPC)",
-      "mana": "MP cost", "stressful": "Stressful", "usesType": "Uses type", "uses": "Uses",
-      "rank": "Rank", "source": "Source", "rarity": "Rarity", "npcFeature": "NPC feature",
-      "free": "Equipped for free", "reloading": "Reloading",
+      "category": "Category",
+      "action": "Action / Activation",
+      "attack": "Attack",
+      "defense": "Target defense",
+      "size": "Size",
+      "weaponType": "Weapon type",
+      "tags": "Tags",
+      "range": "Range / Reach / Area",
+      "damage": "Damage",
+      "damageType": "Damage type",
+      "attackBonus": "Attack bonus (NPC)",
+      "mana": "MP cost",
+      "stressful": "Stressful",
+      "usesType": "Uses type",
+      "uses": "Uses",
+      "rank": "Rank",
+      "source": "Source",
+      "rarity": "Rarity",
+      "npcFeature": "NPC feature",
+      "free": "Equipped for free",
+      "reloading": "Reloading",
       "tagsHint": "Tags recognized automatically: Accurate, Inaccurate, Aetheric (targets A-Def), Piercing, Reliable X, Mana X, Focus X, Stressful X, Slow. NPC values may use the T1/T2/T3 format (e.g. 4/6/8)."
     },
-    "Supply": { "quantity": "Quantity", "cost": "Cost (Gold)" },
-    "Template": { "kind": "Template kind" },
+    "Supply": {
+      "quantity": "Quantity",
+      "cost": "Cost (Gold)"
+    },
+    "Template": {
+      "kind": "Template kind"
+    },
     "Sheet": {
-      "beacon": "Beacon Sheet", "npc": "NPC Sheet", "item": "BEACON Item Sheet",
-      "name": "Name", "description": "Description", "noJob": "No Job equipped", "noAncestry": "No ancestry",
-      "newItem": "New {type}", "use": "Use / roll", "edit": "Edit", "delete": "Delete",
-      "equipped": "Equipped", "destroyed": "Destroyed", "loaded": "Loaded", "charged": "Charged (Recharge)",
-      "spendRecovery": "Spend Recovery (full HP)", "woundRoll": "Roll Wound table",
-      "overstressRoll": "Roll Overstress table", "discordCheck": "Magic check against Discord"
+      "beacon": "Beacon Sheet",
+      "npc": "NPC Sheet",
+      "item": "BEACON Item Sheet",
+      "name": "Name",
+      "description": "Description",
+      "noJob": "No Job equipped",
+      "noAncestry": "No ancestry",
+      "newItem": "New {type}",
+      "use": "Use / roll",
+      "edit": "Edit",
+      "delete": "Delete",
+      "equipped": "Equipped",
+      "destroyed": "Destroyed",
+      "loaded": "Loaded",
+      "charged": "Charged (Recharge)",
+      "spendRecovery": "Spend Recovery (full HP)",
+      "woundRoll": "Roll Wound table",
+      "overstressRoll": "Roll Overstress table",
+      "discordCheck": "Magic check against Discord"
     },
     "Settings": {
       "resetPhases": "Beacons choose their phase every round",
-      "resetPhasesHint": "At the start of each round the beacons' phase in the combat tracker is cleared, so each player picks again."
+      "resetPhasesHint": "At the start of each round the beacons' phase in the combat tracker is cleared, so each player picks again.",
+      "rulerSpeedColors": "Speed-colored ruler",
+      "rulerSpeedColorsHint": "When moving a token, the path is green up to its Speed (standard movement), yellow up to 2× Speed (with Rush) and red beyond. Slowed removes the yellow band and Immobilized makes everything red.",
+      "gridDiagonals": "BEACON diagonals (1 space)",
+      "gridDiagonalsHint": "Keeps Foundry's diagonal rule on Equidistant: moving or measuring diagonally costs 1 space, as in BEACON.",
+      "rangeLabel": "Show distance on hover",
+      "rangeLabelHint": "With a token selected, hovering another shows the distance in spaces, measured edge to edge (nearest occupied space of each), as the book requires for Range and Reach."
     },
     "Import": {
-      "button": "Import BEACON", "title": "Import BEACON content (JSON)", "import": "Import",
-      "folder": "Destination folder", "gmOnly": "Only the GM can import.",
-      "invalid": "Invalid JSON", "done": "Import finished: {items} items and {actors} actors.",
+      "button": "Import BEACON",
+      "title": "Import BEACON content (JSON)",
+      "import": "Import",
+      "folder": "Destination folder",
+      "gmOnly": "Only the GM can import.",
+      "invalid": "Invalid JSON",
+      "done": "Import finished: {items} items and {actors} actors.",
       "hint": "Paste a JSON array of documents (Item or Actor) in the system format. See the README for each type's schema."
     },
     "Warn": {
-      "badFormula": "Invalid damage formula: {formula}", "destroyed": "{name} is destroyed.",
-      "unloaded": "{name} must be reloaded.", "notCharged": "{name} hasn't recharged yet.",
-      "noUses": "{name} has no uses left.", "silenced": "Silenced characters can't use spells.",
-      "noMP": "Not enough MP (cost {cost}).", "noFocus": "Not enough Focus (cost {cost}).",
-      "noRecoveries": "No Recoveries available.", "noDiscord": "No Discord to check.",
-      "nothingToRecharge": "No abilities waiting to recharge.", "noJob": "No Job equipped.",
-      "limitBreakUsed": "Limit Break already used this quest.", "itemMissing": "Item not found.",
-      "selectToken": "Select or target a token.", "notOwner": "You don't have permission over {name}.",
+      "badFormula": "Invalid damage formula: {formula}",
+      "destroyed": "{name} is destroyed.",
+      "unloaded": "{name} must be reloaded.",
+      "notCharged": "{name} hasn't recharged yet.",
+      "noUses": "{name} has no uses left.",
+      "silenced": "Silenced characters can't use spells.",
+      "noMP": "Not enough MP (cost {cost}).",
+      "noFocus": "Not enough Focus (cost {cost}).",
+      "noRecoveries": "No Recoveries available.",
+      "noDiscord": "No Discord to check.",
+      "nothingToRecharge": "No abilities waiting to recharge.",
+      "noJob": "No Job equipped.",
+      "limitBreakUsed": "Limit Break already used this quest.",
+      "itemMissing": "Item not found.",
+      "selectToken": "Select or target a token.",
+      "notOwner": "You don't have permission over {name}.",
       "macroOwned": "Macros can only be created for items owned by an actor."
+    },
+    "Ruler": {
+      "spaces": "sp.",
+      "outOfRange": "Out of range"
     }
   }
 }

@@ -7,12 +7,15 @@ import { BeaconCombat, onRenderCombatTracker } from "./module/documents/combat.m
 import { BeaconCharacterSheet, BeaconNPCSheet } from "./module/sheets/actor-sheet.mjs";
 import { BeaconItemSheet } from "./module/sheets/item-sheet.mjs";
 import { onRenderChatMessage } from "./module/chat.mjs";
+import { BeaconTokenRuler } from "./module/canvas/token-ruler.mjs";
+import { onHoverToken } from "./module/canvas/distance.mjs";
+import * as distance from "./module/canvas/distance.mjs";
 import { openImporter, importBeaconData, addImportButton } from "./module/importer.mjs";
 import * as rolls from "./module/rolls.mjs";
 
 Hooks.once("init", () => {
   CONFIG.BEACON = BEACON;
-  game.beacon = { rolls, openImporter, importBeaconData };
+  game.beacon = { rolls, distance, openImporter, importBeaconData };
 
   CONFIG.Actor.documentClass = BeaconActor;
   CONFIG.Item.documentClass = BeaconItem;
@@ -36,6 +39,7 @@ Hooks.once("init", () => {
   };
 
   CONFIG.Combat.initiative = { formula: "0", decimals: 0 };
+  CONFIG.Token.rulerClass = BeaconTokenRuler;
 
   CONFIG.statusEffects = [
     { id: "dead", name: "BEACON.Condition.defeated", img: "icons/svg/skull.svg" },
@@ -57,6 +61,34 @@ Hooks.once("init", () => {
     config: true,
     type: Boolean,
     default: true
+  });
+
+  game.settings.register("beacon", "rulerSpeedColors", {
+    name: "BEACON.Settings.rulerSpeedColors",
+    hint: "BEACON.Settings.rulerSpeedColorsHint",
+    scope: "client",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
+  game.settings.register("beacon", "rangeLabel", {
+    name: "BEACON.Settings.rangeLabel",
+    hint: "BEACON.Settings.rangeLabelHint",
+    scope: "client",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
+  game.settings.register("beacon", "gridDiagonals", {
+    name: "BEACON.Settings.gridDiagonals",
+    hint: "BEACON.Settings.gridDiagonalsHint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true,
+    onChange: value => value && applyBeaconDiagonals()
   });
 
   foundry.applications.handlebars.loadTemplates([
@@ -81,7 +113,20 @@ Hooks.once("init", () => {
   });
 });
 
+Hooks.once("ready", () => {
+  if (game.settings.get("beacon", "gridDiagonals")) applyBeaconDiagonals();
+});
+
+async function applyBeaconDiagonals() {
+  if (!game.user.isGM) return;
+  const equidistant = CONST.GRID_DIAGONALS.EQUIDISTANT;
+  if (game.settings.get("core", "gridDiagonals") !== equidistant) {
+    await game.settings.set("core", "gridDiagonals", equidistant);
+  }
+}
+
 Hooks.on("renderChatMessageHTML", onRenderChatMessage);
+Hooks.on("hoverToken", onHoverToken);
 Hooks.on("renderCombatTracker", onRenderCombatTracker);
 Hooks.on("renderItemDirectory", addImportButton);
 Hooks.on("renderActorDirectory", addImportButton);

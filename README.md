@@ -41,6 +41,10 @@ Instalação manual: extraia o `beacon.zip` da [última release](https://github.
 - Opcionalmente, a fase dos beacons é limpa a cada rodada (configuração do sistema).
 - Botões de Surge (custo de Stress pelo nível de Surge), Defend (Focus = Armor + 1d3), Refresh, Limit Break (1 por quest), Short Rest e Long Rest.
 
+**Régua e movimento**: distâncias em espaços, com diagonal custando 1 espaço (regra Equidistante do Foundry, aplicada automaticamente pelo GM). Ao arrastar um token, o trajeto fica verde até a Speed, amarelo até 2× a Speed (Rush) e vermelho além disso; Slowed remove o trecho amarelo e Immobilized deixa tudo vermelho. As duas opções podem ser desligadas nas configurações do sistema.
+
+**Alcance de borda a borda**: Range e Reach são medidos entre os espaços ocupados mais próximos do atacante e do alvo, então tokens Size 2 e 3 contam a partir da borda e não do centro. No cartão de ataque, cada alvo mostra a distância e o alcance máximo da habilidade (ex.: `4/3 esp.`), com aviso de "Fora de alcance". Com um token selecionado, passar o mouse sobre outro mostra a distância. O tamanho do token no grid segue o Size da ancestralidade ou do NPC: 1/2 e 1 ocupam 1 espaço, 2 ocupa 2×2 e 3 ocupa 3×3.
+
 **Condições e status**: Blinded, Dazed, Disarmed, Immobilized, Marked, Silenced, Slowed, Stunned, Sundered, Vulnerable, Weakened, Bloodied, Breaking, Engaged, Flying, Grappled, Hidden, Invisible e Prone. Bloodied e Breaking são aplicados automaticamente.
 
 **NPCs**: cada NPC guarda os valores dos 3 tiers e a ficha usa os do tier escolhido. Nas habilidades, campos no formato `T1/T2/T3` (`+2/4/6`, `4/6/8`) são resolvidos pelo tier.

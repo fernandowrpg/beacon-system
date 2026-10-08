@@ -22,6 +22,9 @@ export class BeaconActor extends Actor {
       if (stats && !foundry.utils.getProperty(data, "system.hp.value")) update["system.hp.value"] = stats.hp;
       if (stats && !foundry.utils.getProperty(data, "system.mp.value")) update["system.mp.value"] = stats.mp;
     }
+    const spaces = Math.max(1, Math.floor(Number(this.system?.size) || 1));
+    update["prototypeToken.width"] = spaces;
+    update["prototypeToken.height"] = spaces;
     update["prototypeToken.bar1.attribute"] = "hp";
     update["prototypeToken.bar2.attribute"] = "stress";
     this.updateSource(update);
@@ -37,9 +40,31 @@ export class BeaconActor extends Actor {
     if (game.users.activeGM?.isSelf && collection === "items") this.syncStatuses();
   }
 
+  _onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId) {
+    super._onDeleteDescendantDocuments(parent, collection, documents, ids, options, userId);
+    if (game.users.activeGM?.isSelf && collection === "items") this.syncStatuses();
+  }
+
+  get gridSpaces() {
+    return Math.max(1, Math.floor(Number(this.system?.size) || 1));
+  }
+
+  async syncTokenSize() {
+    const spaces = this.gridSpaces;
+    const proto = this.prototypeToken;
+    if (proto.width !== spaces || proto.height !== spaces) {
+      await this.update({ "prototypeToken.width": spaces, "prototypeToken.height": spaces });
+    }
+    const tokens = this.isToken ? [this.token] : this.getActiveTokens(false, true);
+    for (const token of tokens) {
+      if (token.width !== spaces || token.height !== spaces) await token.update({ width: spaces, height: spaces });
+    }
+  }
+
   async syncStatuses() {
     const sys = this.system;
     if (!sys?.attributes) return;
+    await this.syncTokenSize();
     const wanted = {
       bloodied: sys.attributes.hp > 0 && sys.isBloodied,
       breaking: sys.isBreaking
